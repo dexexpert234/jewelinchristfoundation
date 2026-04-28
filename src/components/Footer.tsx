@@ -1,0 +1,78 @@
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import logo from "@/assets/logo.png";
+
+const Footer = () => (
+  <footer className="bg-primary text-primary-foreground pt-20 pb-8">
+    <div className="container">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+        <div>
+          <div className="flex items-center gap-3 mb-5">
+            <img src={logo} alt="Logo" className="h-12 w-12 object-contain" width={48} height={48} />
+            <div>
+              <div className="font-display text-xl">Jewel in Christ</div>
+              <div className="text-[10px] tracking-[0.25em] text-accent uppercase">Foundation</div>
+            </div>
+          </div>
+          <p className="text-sm text-primary-foreground/70 leading-relaxed mb-5">
+            Empowering women, transforming families, and building thriving communities through faith, skills, and advocacy.
+          </p>
+          <div className="flex gap-2">
+            {[Facebook, Instagram, Twitter, Linkedin].map((I, i) => (
+              <a key={i} href="#" aria-label="social" className="h-9 w-9 rounded-full border border-accent/30 flex items-center justify-center hover:bg-accent hover:text-primary transition-smooth">
+                <I className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-display text-lg text-accent mb-5">Quick Links</h4>
+          <ul className="space-y-2.5 text-sm text-primary-foreground/70">
+            {["Home", "About Us", "Programs", "Events", "Blog", "Contact"].map((x) => (
+              <li key={x}><a href={`#${x.toLowerCase().replace(/ /g, "")}`} className="hover:text-accent transition-smooth">{x}</a></li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-display text-lg text-accent mb-5">Programs</h4>
+          <ul className="space-y-2.5 text-sm text-primary-foreground/70">
+            {["Vocational Training", "Entrepreneurship", "Economic Empowerment", "Support & Advocacy", "Community Outreach"].map((x) => (
+              <li key={x}><a href="#programs" className="hover:text-accent transition-smooth">{x}</a></li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-display text-lg text-accent mb-5">Stay Connected</h4>
+          <div className="space-y-3 text-sm text-primary-foreground/70 mb-5">
+            <a href="mailto:info.jewelsfoundation@gmail.com" className="flex items-start gap-2 hover:text-accent transition-smooth">
+              <Mail className="h-4 w-4 text-accent mt-0.5" /> info.jewelsfoundation@gmail.com
+            </a>
+            <a href="tel:+2348036430902" className="flex items-center gap-2 hover:text-accent transition-smooth">
+              <Phone className="h-4 w-4 text-accent" /> +234 803 643 0902
+            </a>
+            <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Enugu, Nigeria</div>
+          </div>
+          <p className="text-xs text-primary-foreground/60 mb-2">Subscribe to our newsletter</p>
+          <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
+            <Input placeholder="Your email" className="h-10 bg-primary-foreground/10 border-accent/20 text-primary-foreground placeholder:text-primary-foreground/50 rounded-lg" />
+            <Button type="submit" variant="hero" size="sm">Join</Button>
+          </form>
+        </div>
+      </div>
+
+      <div className="pt-8 border-t border-accent/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/60">
+        <p>© 2026 Jewel in Christ Foundation. All Rights Reserved.</p>
+        <div className="flex gap-6">
+          <a href="#" className="hover:text-accent transition-smooth">Privacy Policy</a>
+          <a href="#" className="hover:text-accent transition-smooth">Terms of Use</a>
+          <span className="flex items-center gap-1.5"><span className="h-1.5 w-1.5 rounded-full bg-accent animate-shimmer" /> Donations Secured</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
+export default Footer;
