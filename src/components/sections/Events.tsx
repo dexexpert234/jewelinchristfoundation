@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { buildMailto } from "@/lib/contact";
 
 const events = [
   {
@@ -76,7 +77,7 @@ const EventCard = ({ e }: { e: typeof events[0] }) => {
           <div className="flex items-center gap-2"><Clock className="h-4 w-4 text-accent" /> {e.time}</div>
           <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> {e.venue}</div>
         </div>
-        <Button asChild variant="royal" className="w-full"><a href="#contact">Register Now</a></Button>
+        <Button asChild variant="royal" className="w-full"><a href={buildMailto(`Event Registration: ${e.title}`)} target="_blank" rel="noopener noreferrer">Register Now</a></Button>
       </div>
     </article>
   );

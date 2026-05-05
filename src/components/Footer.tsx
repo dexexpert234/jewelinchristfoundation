@@ -1,7 +1,9 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/logo.png";
+import { buildMailto } from "@/lib/contact";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground pt-20 pb-8">
@@ -9,7 +11,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <img src={logo} alt="Logo" className="h-12 w-12 object-contain" width={48} height={48} />
+            <img src={logo} alt="Logo" className="h-12 w-12 object-contain rounded-md" width={48} height={48} />
             <div>
               <div className="font-display text-xl">Jewel in Christ</div>
               <div className="text-[10px] tracking-[0.25em] text-accent uppercase">Foundation</div>
@@ -30,8 +32,16 @@ const Footer = () => (
         <div>
           <h4 className="font-display text-lg text-accent mb-5">Quick Links</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/70">
-            {["Home", "About Us", "Programs", "Events", "Blog", "Contact"].map((x) => (
-              <li key={x}><a href={`#${x.toLowerCase().replace(/ /g, "")}`} className="hover:text-accent transition-smooth">{x}</a></li>
+            {[
+              { l: "Home", to: "/" },
+              { l: "About Us", to: "/#about" },
+              { l: "Programs", to: "/programs" },
+              { l: "Events", to: "/events" },
+              { l: "Gallery", to: "/gallery" },
+              { l: "Blog", to: "/#blog" },
+              { l: "Contact", to: "/contact" },
+            ].map((x) => (
+              <li key={x.l}><Link to={x.to} className="hover:text-accent transition-smooth">{x.l}</Link></li>
             ))}
           </ul>
         </div>
@@ -40,7 +50,7 @@ const Footer = () => (
           <h4 className="font-display text-lg text-accent mb-5">Programs</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/70">
             {["Vocational Training", "Entrepreneurship", "Economic Empowerment", "Support & Advocacy", "Community Outreach"].map((x) => (
-              <li key={x}><a href="#programs" className="hover:text-accent transition-smooth">{x}</a></li>
+              <li key={x}><Link to="/programs" className="hover:text-accent transition-smooth">{x}</Link></li>
             ))}
           </ul>
         </div>
@@ -57,8 +67,15 @@ const Footer = () => (
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Enugu, Nigeria</div>
           </div>
           <p className="text-xs text-primary-foreground/60 mb-2">Subscribe to our newsletter</p>
-          <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
-            <Input placeholder="Your email" className="h-10 bg-primary-foreground/10 border-accent/20 text-primary-foreground placeholder:text-primary-foreground/50 rounded-lg" />
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const email = (e.currentTarget.elements.namedItem("email") as HTMLInputElement)?.value;
+              window.location.href = buildMailto("Newsletter Signup", `Please add this email to your newsletter: ${email}`);
+            }}
+            className="flex gap-2"
+          >
+            <Input name="email" placeholder="Your email" className="h-10 bg-primary-foreground/10 border-accent/20 text-primary-foreground placeholder:text-primary-foreground/50 rounded-lg" />
             <Button type="submit" variant="hero" size="sm">Join</Button>
           </form>
         </div>

@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Heart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import h1 from "@/assets/hero-1.jpg";
-import h2 from "@/assets/hero-2.jpg";
-import h3 from "@/assets/hero-3.jpg";
+import { buildMailto } from "@/lib/contact";
+import h1 from "@/assets/jewel-7.jpg";
+import h2 from "@/assets/jewel-8.jpg";
+import h3 from "@/assets/jewel-5.jpg";
 
 const slides = [
   {
@@ -62,10 +63,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
             <Button asChild variant="hero" size="lg" className="h-14 px-8 text-base">
-              <a href="#donate"><Heart className="h-5 w-5" /> Donate Now</a>
+              <a href={buildMailto("Donation Inquiry — Jewel in Christ Foundation")} target="_blank" rel="noopener noreferrer"><Heart className="h-5 w-5" /> Donate Now</a>
             </Button>
             <Button asChild variant="outlineGold" size="lg" className="h-14 px-8 text-base">
-              <a href="#programs"><Users className="h-5 w-5" /> Join the Movement</a>
+              <a href={buildMailto("Join the Movement — Volunteer / Partner Inquiry")} target="_blank" rel="noopener noreferrer"><Users className="h-5 w-5" /> Join the Movement</a>
             </Button>
           </div>
         </div>
