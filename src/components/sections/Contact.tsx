@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
+import { buildMailto } from "@/lib/contact";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -13,8 +14,12 @@ const Contact = () => {
       toast({ title: "Please complete all fields", variant: "destructive" });
       return;
     }
-    toast({ title: "Message sent ✨", description: "We'll get back to you within 24 hours." });
-    setForm({ name: "", email: "", message: "" });
+    const url = buildMailto(
+      `Website Inquiry from ${form.name}`,
+      `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
+    );
+    window.open(url, "_blank", "noopener,noreferrer");
+    toast({ title: "Opening your email…", description: "Send the prepared message to reach us." });
   };
 
   return (

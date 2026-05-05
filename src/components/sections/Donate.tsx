@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Heart, Lock, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { buildMailto } from "@/lib/contact";
 
 const presets = [
   { amount: 25, impact: "Provides training materials for 1 woman" },
@@ -88,8 +89,17 @@ const Donate = () => {
               <div className="text-sm">{impact} {recurring && "— every month."}</div>
             </div>
 
-            <Button variant="hero" size="lg" className="w-full h-14 text-base">
-              <Heart className="h-5 w-5" /> Donate ${selected || 0} {recurring ? "/month" : "Today"}
+            <Button asChild variant="hero" size="lg" className="w-full h-14 text-base">
+              <a
+                href={buildMailto(
+                  `Donation: $${selected || 0}${recurring ? "/month" : ""}`,
+                  `Hello Jewel in Christ Foundation,\n\nI'd like to make a ${recurring ? "monthly" : "one-time"} donation of $${selected || 0}.\n\nPlease send me the next steps.\n\nThank you.`
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Heart className="h-5 w-5" /> Donate ${selected || 0} {recurring ? "/month" : "Today"}
+              </a>
             </Button>
             <p className="text-center text-xs text-muted-foreground mt-4 flex items-center justify-center gap-2">
               <Lock className="h-3 w-3" /> Secured by industry-standard encryption
