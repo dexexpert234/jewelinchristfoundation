@@ -6,6 +6,16 @@ import j5 from "@/assets/jewel-5.jpg";
 import j6 from "@/assets/jewel-6.jpg";
 import j7 from "@/assets/jewel-7.jpg";
 import j8 from "@/assets/jewel-8.jpg";
+import g1 from "@/assets/gallery-extra-1.jpg";
+import g2 from "@/assets/gallery-extra-2.jpg";
+import g3 from "@/assets/gallery-extra-3.jpg";
+import g4 from "@/assets/gallery-extra-4.jpg";
+import g5 from "@/assets/gallery-extra-5.jpg";
+import g6 from "@/assets/gallery-extra-6.jpg";
+import g7 from "@/assets/gallery-extra-7.jpg";
+import g8 from "@/assets/gallery-extra-8.jpg";
+import g9 from "@/assets/gallery-extra-9.jpg";
+import g10 from "@/assets/gallery-extra-10.jpg";
 
 const photos = [
   { src: j1, caption: "Christmas outreach — gift presentation" },
@@ -16,6 +26,16 @@ const photos = [
   { src: j6, caption: "Balloon outreach in primary school" },
   { src: j7, caption: "School-wide pupils outreach" },
   { src: j8, caption: "Partnership with Obijackson Foundation" },
+  { src: g1, caption: "2026 International Women's Day — high table address" },
+  { src: g2, caption: "Honouring excellence — recognition award" },
+  { src: g3, caption: "Welcome remarks at the IWD celebration" },
+  { src: g4, caption: "Solidarity in purple — supporters of the cause" },
+  { src: g5, caption: "Recognising women of distinction" },
+  { src: g6, caption: "Award presentation to a community matriarch" },
+  { src: g7, caption: "Food parcels distributed to women in need" },
+  { src: g8, caption: "₦50,000 micro-grant presented to a beneficiary" },
+  { src: g9, caption: "Group photo — women's empowerment gathering" },
+  { src: g10, caption: "Community engagement & outreach in session" },
 ];
 
 const Gallery = () => (
