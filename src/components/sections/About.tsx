@@ -36,10 +36,10 @@ const About = () => (
       <div className="grid md:grid-cols-5 gap-10 items-center bg-secondary rounded-3xl p-8 md:p-14">
         <div className="md:col-span-2">
           <div className="relative rounded-2xl overflow-hidden shadow-elegant">
-            <img src={leader} alt="Nkechi Ahurah, Programs Director" className="w-full h-[420px] object-cover" loading="lazy" width={800} height={1000} />
+            <img src={leader} alt="Judith Ngozi Agu, Programs Director" className="w-full h-[420px] object-cover" loading="lazy" width={800} height={1000} />
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary/95 to-transparent text-primary-foreground">
               <div className="text-accent text-xs uppercase tracking-[0.3em] mb-1">Programs Director</div>
-              <div className="font-display text-2xl">Nkechi Ahurah</div>
+              <div className="font-display text-2xl">Judith Ngozi Agu</div>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const About = () => (
           </div>
           <h3 className="font-display text-4xl text-primary mb-6">Led with Heart, Driven by Purpose</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Under the leadership of Nkechi Ahurah, our Programs Director, Jewel in Christ Foundation has grown into a movement of restoration — where every program is designed with empathy, expertise, and an unwavering belief in human dignity.
+            Under the leadership of Judith Ngozi Agu, our Programs Director, Jewel in Christ Foundation has grown into a movement of restoration — where every program is designed with empathy, expertise, and an unwavering belief in human dignity.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Together with a passionate team of staff, volunteers, and partners, we serve communities across Nigeria and beyond — bridging gaps, breaking cycles, and building futures that flourish.
