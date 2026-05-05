@@ -1,39 +1,18 @@
 import { useEffect, useState } from "react";
-import { Menu, X, ChevronDown, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Menu, X, Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
+import { buildMailto } from "@/lib/contact";
 
 const menu = [
-  { label: "Home", href: "#home" },
-  {
-    label: "About Us",
-    href: "#about",
-    children: [
-      { label: "Our Story", href: "#about" },
-      { label: "Vision & Mission", href: "#about" },
-      { label: "Leadership", href: "#about" },
-    ],
-  },
-  {
-    label: "Programs",
-    href: "#programs",
-    children: [
-      { label: "Community Outreach", href: "#programs" },
-      { label: "Youth Empowerment", href: "#programs" },
-      { label: "Women Support", href: "#programs" },
-    ],
-  },
-  {
-    label: "Events",
-    href: "#events",
-    children: [
-      { label: "Upcoming Events", href: "#events" },
-      { label: "Past Events", href: "#events" },
-    ],
-  },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/#about" },
+  { label: "Programs", to: "/programs" },
+  { label: "Events", to: "/events" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "Blog", to: "/#blog" },
+  { label: "Contact", to: "/contact" },
 ];
 
 const Navbar = () => {
@@ -53,46 +32,30 @@ const Navbar = () => {
       }`}
     >
       <nav className="container flex items-center justify-between h-20">
-        <a href="#home" className="flex items-center gap-3 group">
-          <img src={logo} alt="Jewel in Christ Foundation logo" className="h-12 w-12 object-contain" width={48} height={48} />
+        <Link to="/" className="flex items-center gap-3 group">
+          <img src={logo} alt="Jewel in Christ Foundation logo" className="h-12 w-12 object-contain rounded-md" width={48} height={48} />
           <div className="leading-tight">
             <div className="font-display text-xl font-semibold text-primary">Jewel in Christ</div>
             <div className="text-[10px] tracking-[0.25em] text-accent uppercase">Foundation</div>
           </div>
-        </a>
+        </Link>
 
         <ul className="hidden lg:flex items-center gap-1">
           {menu.map((item) => (
-            <li key={item.label} className="relative group">
-              <a
-                href={item.href}
+            <li key={item.label}>
+              <Link
+                to={item.to}
                 className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-smooth"
               >
                 {item.label}
-                {item.children && <ChevronDown className="h-3.5 w-3.5" />}
-              </a>
-              {item.children && (
-                <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-smooth">
-                  <div className="min-w-[220px] bg-card rounded-xl shadow-elegant border border-border overflow-hidden">
-                    {item.children.map((c) => (
-                      <a
-                        key={c.label}
-                        href={c.href}
-                        className="block px-5 py-3 text-sm hover:bg-secondary hover:text-primary transition-smooth border-l-2 border-transparent hover:border-accent"
-                      >
-                        {c.label}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="hidden lg:flex items-center gap-3">
           <Button asChild variant="hero" size="lg">
-            <a href="#donate"><Heart className="h-4 w-4" /> Donate</a>
+            <a href={buildMailto("Donation Inquiry — Jewel in Christ Foundation")} target="_blank" rel="noopener noreferrer"><Heart className="h-4 w-4" /> Donate</a>
           </Button>
         </div>
 
@@ -105,17 +68,17 @@ const Navbar = () => {
         <div className="lg:hidden bg-card border-t border-border animate-fade-in-up">
           <div className="container py-4 flex flex-col gap-1">
             {menu.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.to}
                 onClick={() => setOpen(false)}
                 className="py-3 px-3 rounded-md hover:bg-secondary text-sm font-medium"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button asChild variant="hero" className="mt-2">
-              <a href="#donate">Donate Now</a>
+              <a href={buildMailto("Donation Inquiry — Jewel in Christ Foundation")} target="_blank" rel="noopener noreferrer">Donate Now</a>
             </Button>
           </div>
         </div>
