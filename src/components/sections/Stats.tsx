@@ -35,19 +35,19 @@ const Counter = ({ end, suffix }: { end: number; suffix: string }) => {
 
 const Stats = () => (
   <section className="relative py-24 gradient-royal text-primary-foreground overflow-hidden">
-    <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 30%, hsl(var(--accent)) 0%, transparent 50%), radial-gradient(circle at 80% 70%, hsl(var(--primary-light)) 0%, transparent 50%)" }} />
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 30%, hsl(var(--accent)) 0%, transparent 50%), radial-gradient(circle at 80% 70%, hsl(var(--primary-light)) 0%, transparent 50%)" }} />
     <div className="container relative z-10">
       <div className="text-center mb-16">
-        <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Our Impact</p>
-        <h2 className="font-display text-4xl md:text-5xl">Numbers That Tell <em className="text-gradient-gold not-italic font-semibold">Stories</em></h2>
+        <p className="text-primary-foreground/70 text-xs uppercase tracking-[0.4em] mb-4">Our Impact</p>
+        <h2 className="font-display text-4xl md:text-5xl">Numbers That Tell <em className="text-primary-foreground not-italic font-semibold">Stories</em></h2>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {stats.map((s, i) => (
           <div key={i} className="text-center group">
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-accent/40 mb-5 group-hover:bg-accent group-hover:text-primary transition-smooth">
-              <s.icon className="h-7 w-7 text-accent group-hover:text-primary transition-smooth" />
+            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-primary-foreground/40 mb-5 group-hover:bg-primary-foreground group-hover:text-background transition-smooth">
+              <s.icon className="h-7 w-7 text-primary-foreground group-hover:text-background transition-smooth" />
             </div>
-            <div className="font-display text-5xl md:text-6xl font-semibold text-accent mb-2">
+            <div className="font-display text-5xl md:text-6xl font-semibold text-primary-foreground mb-2">
               <Counter end={s.end} suffix={s.suffix} />
             </div>
             <p className="text-sm uppercase tracking-widest text-primary-foreground/80">{s.label}</p>

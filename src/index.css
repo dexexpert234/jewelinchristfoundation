@@ -27,10 +27,10 @@
     --muted: 30 25% 94%;
     --muted-foreground: 20 15% 38%;
 
-    /* Complementary Teal accent */
-    --accent: 188 78% 38%;
+    /* Black accent */
+    --accent: 0 0% 10%;
     --accent-foreground: 30 50% 98%;
-    --accent-soft: 188 60% 90%;
+    --accent-soft: 0 0% 92%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -43,13 +43,13 @@
 
     /* Brand gradients */
     --gradient-royal: linear-gradient(135deg, hsl(20 90% 38%), hsl(22 95% 50%), hsl(30 95% 60%));
-    --gradient-gold: linear-gradient(135deg, hsl(188 78% 38%), hsl(195 80% 50%));
-    --gradient-hero-overlay: linear-gradient(135deg, hsl(20 90% 18% / 0.85), hsl(22 80% 30% / 0.65));
+    --gradient-gold: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 30%));
+    --gradient-hero-overlay: linear-gradient(135deg, hsl(0 0% 0% / 0.85), hsl(0 0% 15% / 0.65));
     --gradient-soft: linear-gradient(180deg, hsl(30 40% 98%), hsl(30 40% 96%));
 
     /* Shadows */
     --shadow-elegant: 0 20px 60px -20px hsl(22 90% 38% / 0.30);
-    --shadow-gold: 0 10px 40px -10px hsl(188 78% 38% / 0.40);
+    --shadow-gold: 0 10px 40px -10px hsl(0 0% 10% / 0.40);
     --shadow-card: 0 4px 24px -8px hsl(22 50% 35% / 0.14);
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);

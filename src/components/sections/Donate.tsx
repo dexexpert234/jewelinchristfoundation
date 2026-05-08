@@ -85,7 +85,7 @@ const Donate = () => {
             </div>
 
             <div className="p-5 rounded-2xl gradient-royal text-primary-foreground mb-6">
-              <div className="text-accent text-xs uppercase tracking-[0.3em] mb-1">Your Impact</div>
+              <div className="text-primary-foreground/80 text-xs uppercase tracking-[0.3em] mb-1">Your Impact</div>
               <div className="text-sm">{impact} {recurring && "— every month."}</div>
             </div>
 

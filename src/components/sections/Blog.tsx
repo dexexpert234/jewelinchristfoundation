@@ -5,7 +5,7 @@ import j7 from "@/assets/jewel-7.jpg";
 import j8 from "@/assets/jewel-8.jpg";
 
 const posts = [
-  { tag: "Impact Story", date: "Mar 12, 2026", title: "How Vocational Training is Rewriting Futures", excerpt: "Meet women whose lives were transformed by our latest cohort and outreach in Enugu.", image: j1 },
+  { tag: "Impact Story", date: "Mar 12, 2026", title: "How Vocational Training is Rewriting Futures", excerpt: "Meet women whose lives were transformed by our latest cohort and outreach in Abeokuta.", image: j1 },
   { tag: "Outreach", date: "Feb 28, 2026", title: "Sharing Joy: School Outreach Program", excerpt: "A look back at our recent visit to pupils — building hope, books, and bright futures.", image: j7 },
   { tag: "Field Notes", date: "Feb 04, 2026", title: "Partnering with Obijackson: Works of Mercy", excerpt: "Together with partners we delivered food and essentials to communities in need.", image: j8 },
 ];

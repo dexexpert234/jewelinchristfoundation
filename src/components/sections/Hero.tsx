@@ -51,7 +51,7 @@ const Hero = () => {
 
       <div className="relative z-10 container h-full flex items-center">
         <div key={i} className="max-w-2xl text-primary-foreground">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/40 bg-primary/30 backdrop-blur text-accent text-xs uppercase tracking-[0.3em] mb-6 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/40 bg-primary/30 backdrop-blur text-primary-foreground text-xs uppercase tracking-[0.3em] mb-6 animate-fade-in-up">
             ✦ {slides[i].eyebrow}
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.05] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
@@ -65,23 +65,23 @@ const Hero = () => {
             <Button asChild variant="hero" size="lg" className="h-14 px-8 text-base">
               <a href={buildMailto("Donation Inquiry — Jewel in Christ Foundation")} target="_blank" rel="noopener noreferrer"><Heart className="h-5 w-5" /> Donate Now</a>
             </Button>
-            <Button asChild variant="outlineGold" size="lg" className="h-14 px-8 text-base">
+            <Button asChild variant="outlineGold" size="lg" className="h-14 px-8 text-base border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-background">
               <a href={buildMailto("Join the Movement — Volunteer / Partner Inquiry")} target="_blank" rel="noopener noreferrer"><Users className="h-5 w-5" /> Join the Movement</a>
             </Button>
           </div>
         </div>
       </div>
 
-      <button onClick={() => go(i - 1)} className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full border border-accent/40 text-accent bg-primary/30 backdrop-blur hover:bg-accent hover:text-primary transition-smooth" aria-label="Previous">
+      <button onClick={() => go(i - 1)} className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full border border-primary-foreground/40 text-primary-foreground bg-primary/30 backdrop-blur hover:bg-primary-foreground hover:text-background transition-smooth" aria-label="Previous">
         <ChevronLeft className="h-5 w-5" />
       </button>
-      <button onClick={() => go(i + 1)} className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full border border-accent/40 text-accent bg-primary/30 backdrop-blur hover:bg-accent hover:text-primary transition-smooth" aria-label="Next">
+      <button onClick={() => go(i + 1)} className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full border border-primary-foreground/40 text-primary-foreground bg-primary/30 backdrop-blur hover:bg-primary-foreground hover:text-background transition-smooth" aria-label="Next">
         <ChevronRight className="h-5 w-5" />
       </button>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
         {slides.map((_, idx) => (
-          <button key={idx} onClick={() => setI(idx)} aria-label={`Slide ${idx + 1}`} className={`h-1.5 rounded-full transition-smooth ${idx === i ? "w-12 bg-accent" : "w-6 bg-primary-foreground/40 hover:bg-primary-foreground/70"}`} />
+          <button key={idx} onClick={() => setI(idx)} aria-label={`Slide ${idx + 1}`} className={`h-1.5 rounded-full transition-smooth ${idx === i ? "w-12 bg-primary-foreground" : "w-6 bg-primary-foreground/40 hover:bg-primary-foreground/70"}`} />
         ))}
       </div>
     </section>

@@ -29,21 +29,21 @@ const Programs = () => (
 
       {/* Featured */}
       <div className="relative overflow-hidden rounded-3xl gradient-royal text-primary-foreground p-10 md:p-16 mb-16 shadow-elegant">
-        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-accent/10 blur-3xl" />
+        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary-foreground/10 blur-3xl" />
         <div className="relative z-10 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/40 text-accent text-xs uppercase tracking-[0.3em] mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/40 text-primary-foreground text-xs uppercase tracking-[0.3em] mb-6">
               <Scale className="h-3.5 w-3.5" /> Featured Program
             </div>
             <h3 className="font-display text-4xl md:text-5xl mb-5">
-              Empowerment & <em className="text-gradient-gold not-italic">Justice Initiative</em>
+              Empowerment & <em className="text-primary-foreground not-italic">Justice Initiative</em>
             </h3>
             <p className="text-primary-foreground/85 leading-relaxed mb-6">
               An integrated program advancing economic empowerment and social justice — including vocational training (and prison apostolate work), entrepreneurship, advocacy for women's rights, and support for survivors of gender-based violence.
             </p>
             <ul className="grid sm:grid-cols-2 gap-2 text-sm text-primary-foreground/90 mb-8">
               {["Vocational training (incl. incarcerated women)", "Entrepreneurship development", "Women's rights advocacy", "Awareness campaigns & workshops", "Support for GBV survivors", "Prison apostolate & reform"].map((x) => (
-                <li key={x} className="flex items-start gap-2"><span className="text-accent mt-0.5">✦</span>{x}</li>
+                <li key={x} className="flex items-start gap-2"><span className="text-primary-foreground mt-0.5">✦</span>{x}</li>
               ))}
             </ul>
             <Button asChild variant="hero" size="lg"><a href={buildMailto("Support the Empowerment & Justice Initiative")} target="_blank" rel="noopener noreferrer">Support This Initiative</a></Button>
@@ -64,7 +64,7 @@ const Programs = () => (
               <div className="absolute top-4 left-4 h-12 w-12 rounded-2xl gradient-gold flex items-center justify-center shadow-gold">
                 <p.icon className="h-5 w-5 text-primary" />
               </div>
-              <div className="absolute bottom-4 left-4 text-accent text-[10px] uppercase tracking-[0.3em]">Program {String(i + 1).padStart(2, "0")}</div>
+              <div className="absolute bottom-4 left-4 text-primary-foreground text-[10px] uppercase tracking-[0.3em]">Program {String(i + 1).padStart(2, "0")}</div>
             </div>
             <div className="p-7">
               <h3 className="font-display text-2xl text-primary mb-3">{p.title}</h3>

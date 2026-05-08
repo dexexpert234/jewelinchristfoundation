@@ -54,15 +54,15 @@ const EventCard = ({ e }: { e: typeof events[0] }) => {
     <article className="group bg-card rounded-3xl overflow-hidden border border-border shadow-card hover:shadow-elegant transition-smooth">
       <div className="gradient-royal text-primary-foreground p-6 flex items-center justify-between">
         <div>
-          <div className="text-accent text-[10px] uppercase tracking-[0.3em] mb-1">{d.toLocaleString("en", { month: "short" })}</div>
-          <div className="font-display text-5xl text-accent leading-none">{d.getDate()}</div>
+          <div className="text-primary-foreground/80 text-[10px] uppercase tracking-[0.3em] mb-1">{d.toLocaleString("en", { month: "short" })}</div>
+          <div className="font-display text-5xl text-primary-foreground leading-none">{d.getDate()}</div>
         </div>
         <div className="text-right">
           <div className="text-xs uppercase tracking-widest text-primary-foreground/70 mb-1">Countdown</div>
           <div className="flex gap-1.5 font-display text-2xl">
             {([["d", c.d], ["h", c.h], ["m", c.m], ["s", c.s]] as const).map(([k, v]) => (
-              <div key={k} className="bg-primary/40 rounded-md px-2 py-1 min-w-[44px] text-center border border-accent/20">
-                <div className="text-accent leading-none">{String(v).padStart(2, "0")}</div>
+              <div key={k} className="bg-primary/40 rounded-md px-2 py-1 min-w-[44px] text-center border border-primary-foreground/20">
+                <div className="text-primary-foreground leading-none">{String(v).padStart(2, "0")}</div>
                 <div className="text-[8px] uppercase tracking-widest text-primary-foreground/60 mt-1">{k}</div>
               </div>
             ))}
