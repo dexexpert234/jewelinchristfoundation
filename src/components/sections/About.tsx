@@ -26,7 +26,7 @@ const About = () => (
           <div className="h-14 w-14 rounded-2xl bg-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
             <Target className="h-7 w-7 text-primary" />
           </div>
-          <h3 className="font-display text-3xl text-accent mb-4">Our Mission</h3>
+          <h3 className="font-display text-3xl text-primary-foreground mb-4">Our Mission</h3>
           <p className="leading-relaxed text-primary-foreground/90">
             To economically empower women through skills training, entrepreneurship support, and advocacy — promoting social justice, equality, and sustainable development, ultimately strengthening families and communities.
           </p>
@@ -37,10 +37,10 @@ const About = () => (
         <div className="md:col-span-2">
           <div className="relative rounded-2xl overflow-hidden shadow-elegant">
             <img src={leader} alt="Judith Ngozi Agu, Programs Director" className="w-full h-[420px] object-cover" loading="lazy" width={800} height={1000} />
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary/95 to-transparent text-primary-foreground">
-              <div className="text-accent text-xs uppercase tracking-[0.3em] mb-1">Programs Director</div>
-              <div className="font-display text-2xl">Judith Ngozi Agu</div>
-            </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary/95 to-transparent text-primary-foreground">
+                <div className="text-primary-foreground/80 text-xs uppercase tracking-[0.3em] mb-1">Programs Director</div>
+                <div className="font-display text-2xl">Judith Ngozi Agu</div>
+              </div>
           </div>
         </div>
         <div className="md:col-span-3">

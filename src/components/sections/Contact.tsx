@@ -34,25 +34,25 @@ const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2 space-y-6">
             <div className="gradient-royal text-primary-foreground p-8 rounded-3xl shadow-elegant">
-              <h3 className="font-display text-2xl text-accent mb-2">Nkechi Ahurah</h3>
+              <h3 className="font-display text-2xl text-primary-foreground mb-2">Nkechi Ahurah</h3>
               <p className="text-primary-foreground/80 text-sm mb-6">Programs Director</p>
               <div className="space-y-4 text-sm">
-                <a href="mailto:info.jewelsfoundation@gmail.com" className="flex items-start gap-3 hover:text-accent transition-smooth">
-                  <Mail className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                <a href="mailto:info.jewelsfoundation@gmail.com" className="flex items-start gap-3 hover:text-primary-foreground transition-smooth">
+                  <Mail className="h-5 w-5 text-primary-foreground/80 shrink-0 mt-0.5" />
                   <span>info.jewelsfoundation@gmail.com</span>
                 </a>
-                <a href="tel:+2348036430902" className="flex items-start gap-3 hover:text-accent transition-smooth">
-                  <Phone className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                <a href="tel:+2348036430902" className="flex items-start gap-3 hover:text-primary-foreground transition-smooth">
+                  <Phone className="h-5 w-5 text-primary-foreground/80 shrink-0 mt-0.5" />
                   <span>+234 803 643 0902</span>
                 </a>
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <MapPin className="h-5 w-5 text-primary-foreground/80 shrink-0 mt-0.5" />
                   <span>Enugu, Nigeria</span>
                 </div>
               </div>
-              <div className="flex gap-3 mt-6 pt-6 border-t border-accent/20">
+              <div className="flex gap-3 mt-6 pt-6 border-t border-primary-foreground/20">
                 {[Facebook, Instagram, Twitter, Linkedin].map((I, i) => (
-                  <a key={i} href="#" aria-label="social" className="h-10 w-10 rounded-full border border-accent/40 flex items-center justify-center hover:bg-accent hover:text-primary transition-smooth">
+                  <a key={i} href="#" aria-label="social" className="h-10 w-10 rounded-full border border-primary-foreground/40 flex items-center justify-center hover:bg-primary-foreground hover:text-background transition-smooth">
                     <I className="h-4 w-4" />
                   </a>
                 ))}
