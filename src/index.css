@@ -43,7 +43,7 @@
 
     /* Brand gradients */
     --gradient-royal: linear-gradient(135deg, hsl(20 90% 38%), hsl(22 95% 50%), hsl(30 95% 60%));
-    --gradient-gold: linear-gradient(135deg, hsl(38 92% 58%), hsl(45 95% 70%));
+    --gradient-gold: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 30%));
     --gradient-hero-overlay: linear-gradient(135deg, hsl(0 0% 0% / 0.85), hsl(0 0% 15% / 0.65));
     --gradient-soft: linear-gradient(180deg, hsl(30 40% 98%), hsl(30 40% 96%));
 
