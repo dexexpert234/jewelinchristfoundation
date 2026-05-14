@@ -1,0 +1,15 @@
+# Jewel in Christ Foundation
+
+> Faith-driven NGO empowering women through skills training, entrepreneurship, advocacy, and community outreach across Nigeria.
+
+## Pages
+
+- [Home](/): Mission overview, impact stats, and latest stories.
+- [About](/#about): Who we are, leadership, and our values.
+- [Programs](/programs): Vocational training, entrepreneurship, economic empowerment, support & advocacy, community outreach.
+- [Events](/events): Upcoming events and ways to participate.
+- [Gallery](/gallery): Photos from outreach, programs, and community events.
+- [Blog](/#blog): Stories from the field and impact updates.
+- [Testimonials](/testimonials): Voices from beneficiaries, partners, and volunteers.
+- [Donate](/donate): Support the mission via WhatsApp.
+- [Contact](/contact): Get in touch with the foundation.
