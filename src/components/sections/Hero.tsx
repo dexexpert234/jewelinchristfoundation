@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.05] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             {slides[i].title.split(" ").slice(0, -2).join(" ")}{" "}
-            <span className="text-gradient-gold italic">{slides[i].title.split(" ").slice(-2).join(" ")}</span>
+            <span className="italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">{slides[i].title.split(" ").slice(-2).join(" ")}</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             {slides[i].desc}
