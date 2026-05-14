@@ -14,10 +14,10 @@ const Footer = () => (
             <img src={logo} alt="Logo" className="h-12 w-12 object-contain rounded-md" width={48} height={48} />
             <div>
               <div className="font-display text-xl">Jewel in Christ</div>
-              <div className="text-[10px] tracking-[0.25em] text-primary-foreground/70 uppercase">Foundation</div>
+              <div className="text-[10px] tracking-[0.25em] text-primary-foreground/90 uppercase">Foundation</div>
             </div>
           </div>
-          <p className="text-sm text-primary-foreground/70 leading-relaxed mb-5">
+          <p className="text-sm text-primary-foreground/90 leading-relaxed mb-5">
             Empowering women, transforming families, and building thriving communities through faith, skills, and advocacy.
           </p>
           <div className="flex gap-2">
@@ -31,7 +31,7 @@ const Footer = () => (
 
         <div>
           <h4 className="font-display text-lg text-primary-foreground mb-5">Quick Links</h4>
-          <ul className="space-y-2.5 text-sm text-primary-foreground/70">
+          <ul className="space-y-2.5 text-sm text-primary-foreground/90">
             {[
               { l: "Home", to: "/" },
               { l: "About Us", to: "/#about" },
@@ -48,7 +48,7 @@ const Footer = () => (
 
         <div>
           <h4 className="font-display text-lg text-primary-foreground mb-5">Programs</h4>
-          <ul className="space-y-2.5 text-sm text-primary-foreground/70">
+          <ul className="space-y-2.5 text-sm text-primary-foreground/90">
             {["Vocational Training", "Entrepreneurship", "Economic Empowerment", "Support & Advocacy", "Community Outreach"].map((x) => (
               <li key={x}><Link to="/programs" className="hover:text-primary-foreground transition-smooth">{x}</Link></li>
             ))}
@@ -57,7 +57,7 @@ const Footer = () => (
 
         <div>
           <h4 className="font-display text-lg text-primary-foreground mb-5">Stay Connected</h4>
-          <div className="space-y-3 text-sm text-primary-foreground/70 mb-5">
+          <div className="space-y-3 text-sm text-primary-foreground/90 mb-5">
             <a href="mailto:info.jewelsfoundation@gmail.com" className="flex items-start gap-2 hover:text-primary-foreground transition-smooth">
               <Mail className="h-4 w-4 text-primary-foreground/80 mt-0.5" /> info.jewelsfoundation@gmail.com
             </a>
@@ -66,7 +66,7 @@ const Footer = () => (
             </a>
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary-foreground/80" /> Enugu, Nigeria</div>
           </div>
-          <p className="text-xs text-primary-foreground/60 mb-2">Subscribe to our newsletter</p>
+          <p className="text-xs text-primary-foreground/85 mb-2">Subscribe to our newsletter</p>
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -75,13 +75,13 @@ const Footer = () => (
             }}
             className="flex gap-2"
           >
-            <Input name="email" placeholder="Your email" className="h-10 bg-primary-foreground/10 border-accent/20 text-primary-foreground placeholder:text-primary-foreground/50 rounded-lg" />
+            <Input name="email" placeholder="Your email" className="h-10 bg-primary-foreground/10 border-accent/20 text-primary-foreground placeholder:text-primary-foreground/80 rounded-lg" />
             <Button type="submit" variant="hero" size="sm">Join</Button>
           </form>
         </div>
       </div>
 
-      <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/60">
+      <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/85">
         <p>© 2026 Jewel in Christ Foundation. All Rights Reserved.</p>
         <div className="flex gap-6">
           <a href="#" className="hover:text-primary-foreground transition-smooth">Privacy Policy</a>

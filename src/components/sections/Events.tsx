@@ -58,12 +58,12 @@ const EventCard = ({ e }: { e: typeof events[0] }) => {
           <div className="font-display text-5xl text-primary-foreground leading-none">{d.getDate()}</div>
         </div>
         <div className="text-right">
-          <div className="text-xs uppercase tracking-widest text-primary-foreground/70 mb-1">Countdown</div>
+          <div className="text-xs uppercase tracking-widest text-primary-foreground/90 mb-1">Countdown</div>
           <div className="flex gap-1.5 font-display text-2xl">
             {([["d", c.d], ["h", c.h], ["m", c.m], ["s", c.s]] as const).map(([k, v]) => (
               <div key={k} className="bg-primary/40 rounded-md px-2 py-1 min-w-[44px] text-center border border-primary-foreground/20">
                 <div className="text-primary-foreground leading-none">{String(v).padStart(2, "0")}</div>
-                <div className="text-[8px] uppercase tracking-widest text-primary-foreground/60 mt-1">{k}</div>
+                <div className="text-[8px] uppercase tracking-widest text-primary-foreground/85 mt-1">{k}</div>
               </div>
             ))}
           </div>
