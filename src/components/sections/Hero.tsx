@@ -44,7 +44,16 @@ const Hero = () => {
             idx === i ? "opacity-100 translate-x-0" : idx < i ? "opacity-0 -translate-x-full" : "opacity-0 translate-x-full"
           }`}
         >
-          <img src={s.image} alt={s.title} className={`absolute inset-0 w-full h-full object-cover ${idx === i ? "animate-ken-burns" : ""}`} width={1920} height={1080} />
+          <img
+            src={s.image}
+            alt={s.title}
+            className={`absolute inset-0 w-full h-full object-cover ${idx === i ? "animate-ken-burns" : ""}`}
+            width={1920}
+            height={1080}
+            {...(idx === 0
+              ? { fetchPriority: "high" as const, loading: "eager" as const, decoding: "async" as const }
+              : { loading: "lazy" as const, decoding: "async" as const })}
+          />
           <div className="absolute inset-0" style={{ background: "var(--gradient-hero-overlay)" }} />
         </div>
       ))}
