@@ -16,6 +16,16 @@ import g7 from "@/assets/gallery-extra-7.jpg";
 import g8 from "@/assets/gallery-extra-8.jpg";
 import g9 from "@/assets/gallery-extra-9.jpg";
 import g10 from "@/assets/gallery-extra-10.jpg";
+import n1 from "@/assets/gallery-new-1.jpg";
+import n2 from "@/assets/gallery-new-2.jpg";
+import n3 from "@/assets/gallery-new-3.jpg";
+import n4 from "@/assets/gallery-new-4.jpg";
+import n5 from "@/assets/gallery-new-5.jpg";
+import n6 from "@/assets/gallery-new-6.jpg";
+import n7 from "@/assets/gallery-new-7.jpg";
+import n8 from "@/assets/gallery-new-8.jpg";
+import n9 from "@/assets/gallery-new-9.jpg";
+import n10 from "@/assets/gallery-new-10.jpg";
 
 const photos = [
   { src: j1, caption: "Christmas outreach — gift presentation" },
@@ -36,6 +46,16 @@ const photos = [
   { src: g8, caption: "₦50,000 micro-grant presented to a beneficiary" },
   { src: g9, caption: "Group photo — women's empowerment gathering" },
   { src: g10, caption: "Community engagement & outreach in session" },
+  { src: n1, caption: "Award for Philanthropy — Barrister Judith Agu Esq." },
+  { src: n2, caption: "National Conference & Presentation of Awards — Abeokuta" },
+  { src: n3, caption: "Plaque presentation at the 2026 IWD celebration" },
+  { src: n4, caption: "Supporters standing with the foundation" },
+  { src: n5, caption: "Recognising a woman of impact" },
+  { src: n6, caption: "Honouring Mrs. Titi Akinlawon, SAN" },
+  { src: n7, caption: "Food relief distribution to women in need" },
+  { src: n8, caption: "₦50,000 micro-grant presentation" },
+  { src: n9, caption: "Group photo with empowered women of the community" },
+  { src: n10, caption: "Community dialogue & engagement session" },
 ];
 
 const Gallery = () => (
