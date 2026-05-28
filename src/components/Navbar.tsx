@@ -8,6 +8,7 @@ import { buildMailto } from "@/lib/contact";
 const menu = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/#about" },
+  { label: "Team", to: "/team" },
   { label: "Programs", to: "/programs" },
   { label: "Events", to: "/events" },
   { label: "Gallery", to: "/gallery" },

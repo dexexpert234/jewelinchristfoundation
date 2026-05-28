@@ -35,6 +35,7 @@ const Footer = () => (
             {[
               { l: "Home", to: "/" },
               { l: "About Us", to: "/#about" },
+              { l: "Team", to: "/team" },
               { l: "Programs", to: "/programs" },
               { l: "Events", to: "/events" },
               { l: "Gallery", to: "/gallery" },
@@ -64,7 +65,7 @@ const Footer = () => (
             <a href="tel:+2348036430902" className="flex items-center gap-2 hover:text-primary-foreground transition-smooth">
               <Phone className="h-4 w-4 text-primary-foreground/80" /> +234 803 643 0902
             </a>
-            <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary-foreground/80" /> Enugu, Nigeria</div>
+            <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary-foreground/80" /> Abeokuta, Nigeria</div>
           </div>
           <p className="text-xs text-primary-foreground/85 mb-2">Subscribe to our newsletter</p>
           <form
