@@ -4,8 +4,12 @@ import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
 import Blog from "@/components/sections/Blog";
+import WhyItMatters from "@/components/sections/WhyItMatters";
+import { useReveal } from "@/hooks/use-reveal";
 
-const Index = () => (
+const Index = () => {
+  useReveal();
+  return (
   <SiteLayout>
     <Seo
       title="Jewel in Christ Foundation — Empowering Women"
@@ -15,8 +19,10 @@ const Index = () => (
     <Hero />
     <Stats />
     <About />
+    <WhyItMatters />
     <Blog />
   </SiteLayout>
-);
+  );
+};
 
 export default Index;
