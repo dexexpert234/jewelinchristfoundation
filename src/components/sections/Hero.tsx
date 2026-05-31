@@ -55,6 +55,7 @@ const Hero = () => {
               : { loading: "lazy" as const, decoding: "async" as const })}
           />
           <div className="absolute inset-0" style={{ background: "var(--gradient-hero-overlay)" }} />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
         </div>
       ))}
 
