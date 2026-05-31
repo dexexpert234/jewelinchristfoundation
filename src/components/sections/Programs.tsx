@@ -1,22 +1,10 @@
-import { Scissors, BookOpen, Briefcase, HeartHandshake, Globe2, Scale } from "lucide-react";
-import j1 from "@/assets/jewel-1.jpg";
-import j2 from "@/assets/jewel-2.jpg";
-import j3 from "@/assets/jewel-3.jpg";
-import j4 from "@/assets/jewel-4.jpg";
+import { Scale } from "lucide-react";
+import { Link } from "react-router-dom";
 import j5 from "@/assets/jewel-5.jpg";
 import j6 from "@/assets/jewel-6.jpg";
-import j7 from "@/assets/jewel-7.jpg";
-import j8 from "@/assets/jewel-8.jpg";
 import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
-
-const programs = [
-  { icon: Scissors, title: "Vocational Training", desc: "Fashion design, culinary arts, beauty services, and handicrafts that build marketable skills.", image: j3 },
-  { icon: Briefcase, title: "Entrepreneurship Development", desc: "Business planning, financial literacy, marketing, and digital business skills.", image: j4 },
-  { icon: BookOpen, title: "Economic Empowerment", desc: "Microfinance, grants for women-led businesses, and business incubation.", image: j1 },
-  { icon: HeartHandshake, title: "Support & Advocacy", desc: "Mentorship, networking events, and policy advocacy for sustainable change.", image: j2 },
-  { icon: Globe2, title: "Community Engagement", desc: "Outreach programs and strategic partnerships across communities.", image: j8 },
-];
+import { programs } from "@/data/programs";
 
 const Programs = () => (
   <section id="programs" className="py-28 gradient-soft">
@@ -57,7 +45,7 @@ const Programs = () => (
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {programs.map((p, i) => (
-          <article key={i} className="group bg-card rounded-3xl overflow-hidden border border-border shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth">
+          <Link to={`/programs/${p.slug}`} key={p.slug} className="group block bg-card rounded-3xl overflow-hidden border border-border shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth reveal" style={{ transitionDelay: `${i * 80}ms` }}>
             <div className="relative h-52 overflow-hidden">
               <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700" loading="lazy" width={800} height={600} />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent" />
@@ -69,11 +57,11 @@ const Programs = () => (
             <div className="p-7">
               <h3 className="font-display text-2xl text-primary mb-3">{p.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
-              <a href={buildMailto(`Inquiry: ${p.title}`)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-5 text-sm font-semibold text-primary hover:text-accent transition-smooth">
-                Learn more <span className="transition-smooth group-hover:translate-x-1">→</span>
-              </a>
+              <span className="inline-flex items-center gap-1 mt-5 text-sm font-semibold text-primary group-hover:text-accent transition-smooth">
+                Read the full story <span className="transition-smooth group-hover:translate-x-1">→</span>
+              </span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </div>

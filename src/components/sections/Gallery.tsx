@@ -22,10 +22,7 @@ import n3 from "@/assets/gallery-new-3.jpg";
 import n4 from "@/assets/gallery-new-4.jpg";
 import n5 from "@/assets/gallery-new-5.jpg";
 import n6 from "@/assets/gallery-new-6.jpg";
-import n7 from "@/assets/gallery-new-7.jpg";
-import n8 from "@/assets/gallery-new-8.jpg";
-import n9 from "@/assets/gallery-new-9.jpg";
-import n10 from "@/assets/gallery-new-10.jpg";
+// duplicates of gallery-extra-7..10 removed
 
 const photos = [
   { src: j1, caption: "Christmas outreach — gift presentation" },
@@ -52,10 +49,7 @@ const photos = [
   { src: n4, caption: "Supporters standing with the foundation" },
   { src: n5, caption: "Recognising a woman of impact" },
   { src: n6, caption: "Honouring Mrs. Titi Akinlawon, SAN" },
-  { src: n7, caption: "Food relief distribution to women in need" },
-  { src: n8, caption: "₦50,000 micro-grant presentation" },
-  { src: n9, caption: "Group photo with empowered women of the community" },
-  { src: n10, caption: "Community dialogue & engagement session" },
+  // duplicates removed: gallery-new-7..10 mirrored gallery-extra-7..10
 ];
 
 const Gallery = () => (
