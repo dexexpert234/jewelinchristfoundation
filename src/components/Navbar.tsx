@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
@@ -12,13 +12,20 @@ const menu = [
   { label: "Programs", to: "/programs" },
   { label: "Events", to: "/events" },
   { label: "Gallery", to: "/gallery" },
-  { label: "Blog", to: "/#blog" },
+  { label: "Stories", to: "/stories" },
   { label: "Contact", to: "/contact" },
 ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { pathname, hash } = useLocation();
+
+  const isActive = (to: string) => {
+    if (to === "/") return pathname === "/" && !hash;
+    if (to.startsWith("/#")) return pathname === "/" && hash === to.slice(1);
+    return pathname === to || pathname.startsWith(to + "/");
+  };
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 30);
@@ -48,7 +55,11 @@ const Navbar = () => {
             <li key={item.label}>
               <Link
                 to={item.to}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-smooth"
+                className={`relative flex items-center gap-1 px-4 py-2 text-sm font-medium transition-smooth ${
+                  isActive(item.to) ? "text-primary" : "text-foreground hover:text-primary"
+                } after:content-[''] after:absolute after:left-3 after:right-3 after:bottom-1 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-primary after:to-primary-light after:transition-all after:duration-300 ${
+                  isActive(item.to) ? "after:opacity-100 after:scale-x-100" : "after:opacity-0 after:scale-x-0 hover:after:opacity-100 hover:after:scale-x-100"
+                } after:origin-left`}
               >
                 {item.label}
               </Link>
@@ -68,14 +79,16 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <div className="lg:hidden bg-card border-t border-border animate-fade-in-up">
+        <div className="lg:hidden bg-card/95 backdrop-blur-md border-t border-border animate-fade-in-up">
           <div className="container py-4 flex flex-col gap-1">
             {menu.map((item) => (
               <Link
                 key={item.label}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="py-3 px-3 rounded-md hover:bg-secondary text-sm font-medium"
+                className={`py-3 px-3 rounded-md text-sm font-medium transition-smooth ${
+                  isActive(item.to) ? "bg-secondary text-primary" : "hover:bg-secondary"
+                }`}
               >
                 {item.label}
               </Link>

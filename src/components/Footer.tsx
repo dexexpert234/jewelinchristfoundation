@@ -39,7 +39,7 @@ const Footer = () => (
               { l: "Programs", to: "/programs" },
               { l: "Events", to: "/events" },
               { l: "Gallery", to: "/gallery" },
-              { l: "Blog", to: "/#blog" },
+              { l: "Stories", to: "/stories" },
               { l: "Contact", to: "/contact" },
             ].map((x) => (
               <li key={x.l}><Link to={x.to} className="hover:text-primary-foreground transition-smooth">{x.l}</Link></li>
