@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, Heart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
 import h1 from "@/assets/jewel-7.jpg";
-import h2 from "@/assets/jewel-8.jpg";
+import h2 from "@/assets/gallery-extra-1.jpg";
 import h3 from "@/assets/jewel-5.jpg";
 
 const slides = [
