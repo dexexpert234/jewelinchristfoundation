@@ -31,7 +31,7 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
       if (p < 1) raf = requestAnimationFrame(tick);
       else {
         setExit(true);
-        setTimeout(onDone, 700);
+        onDone();
       }
     };
     raf = requestAnimationFrame(tick);
@@ -76,9 +76,9 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
       )}
 
       {/* center content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-2xl">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 max-w-2xl w-full">
         {/* progress ring + logo */}
-        <div className="relative h-44 w-44 mb-10">
+        <div className="relative h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 mb-6 sm:mb-10">
           <svg className="absolute inset-0 -rotate-90" viewBox="0 0 100 100">
             <defs>
               <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
@@ -94,27 +94,27 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
               style={{ transition: "stroke-dashoffset 120ms linear", filter: "drop-shadow(0 0 8px hsl(22 96% 53% / 0.7))" }}
             />
           </svg>
-          <div className="absolute inset-3 rounded-full bg-[hsl(0_0%_100%/0.04)] backdrop-blur-sm flex items-center justify-center animate-pulse-glow">
-            <img src={logo} alt="Jewel in Christ Foundation" className="h-24 w-24 object-contain" />
+          <div className="absolute inset-2 sm:inset-3 rounded-full bg-[hsl(0_0%_100%/0.04)] backdrop-blur-sm flex items-center justify-center animate-pulse-glow">
+            <img src={logo} alt="Jewel in Christ Foundation" className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 object-contain" />
           </div>
         </div>
 
         {/* phase content */}
-        <div className="min-h-[120px] flex items-center justify-center">
+        <div className="min-h-[100px] sm:min-h-[120px] flex items-center justify-center w-full">
           {phase <= 1 && (
             <div key="name" className="animate-page-fade-in">
-              <h1 className="font-luxe text-3xl sm:text-5xl font-semibold text-white tracking-wide">
+              <h1 className="font-luxe text-2xl sm:text-4xl md:text-5xl font-semibold text-white tracking-wide">
                 Jewel in Christ <span className="bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent italic">Foundation</span>
               </h1>
-              <p className="mt-3 text-xs sm:text-sm uppercase tracking-[0.5em] text-amber-200/80">A movement of restoration</p>
+              <p className="mt-3 text-[10px] sm:text-sm uppercase tracking-[0.35em] sm:tracking-[0.5em] text-amber-200/80">A movement of restoration</p>
             </div>
           )}
           {phase === 2 && (
-            <div key="mission" className="space-y-2">
+            <div key="mission" className="space-y-2 px-2">
               {lines.map((line, i) => (
                 <p
                   key={line}
-                  className="font-luxe text-xl sm:text-3xl text-white animate-page-fade-in"
+                  className="font-luxe text-lg sm:text-2xl md:text-3xl text-white animate-page-fade-in"
                   style={{ animationDelay: `${i * 220}ms` }}
                 >
                   {line}
@@ -123,15 +123,15 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
             </div>
           )}
           {phase === 3 && (
-            <div key="final" className="animate-page-fade-in">
-              <p className="font-luxe text-2xl sm:text-4xl text-white">
+            <div key="final" className="animate-page-fade-in px-2">
+              <p className="font-luxe text-xl sm:text-3xl md:text-4xl text-white">
                 <span className="bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Faith. Skills. Advocacy. Transformation.</span>
               </p>
             </div>
           )}
         </div>
 
-        <p className="mt-10 text-[10px] sm:text-xs uppercase tracking-[0.6em] text-white/60">
+        <p className="mt-6 sm:mt-10 text-[9px] sm:text-xs uppercase tracking-[0.4em] sm:tracking-[0.6em] text-white/60">
           {Math.round(progress * 100)}% — Preparing your experience
         </p>
       </div>
