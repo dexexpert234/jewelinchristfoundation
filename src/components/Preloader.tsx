@@ -31,7 +31,7 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
       if (p < 1) raf = requestAnimationFrame(tick);
       else {
         setExit(true);
-        setTimeout(onDone, 700);
+        onDone();
       }
     };
     raf = requestAnimationFrame(tick);
