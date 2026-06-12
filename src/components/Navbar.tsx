@@ -39,9 +39,9 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-card" : "bg-background"
       }`}
     >
-      <nav className="container flex items-center justify-between h-20">
+      <nav className="container flex items-center justify-between h-24 md:h-28 py-3">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Jewel in Christ Foundation logo" className="h-16 w-16 md:h-20 md:w-20 object-contain group-hover:scale-105 transition-smooth drop-shadow-md" width={80} height={80} />
+          <img src={logo} alt="Jewel in Christ Foundation logo" className="h-14 w-14 md:h-16 md:w-16 object-contain rounded-2xl bg-white/60 p-1 ring-1 ring-border shadow-card group-hover:scale-105 transition-smooth" width={64} height={64} loading="eager" decoding="async" />
           <div className="leading-tight">
             <div className="font-display text-2xl md:text-3xl font-extrabold text-primary tracking-tight">Jewel in Christ</div>
             <div className="text-[11px] md:text-xs font-bold tracking-[0.35em] text-accent uppercase">Foundation</div>

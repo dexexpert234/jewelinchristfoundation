@@ -11,7 +11,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <img src={logo} alt="Logo" className="h-16 w-16 object-contain drop-shadow-md" width={64} height={64} />
+            <img src={logo} alt="Logo" className="h-14 w-14 object-contain rounded-2xl bg-white/90 p-1 shadow-card" width={56} height={56} loading="lazy" decoding="async" />
             <div>
               <div className="font-display text-2xl font-extrabold tracking-tight">Jewel in Christ</div>
               <div className="text-[11px] font-bold tracking-[0.3em] text-primary-foreground/95 uppercase">Foundation</div>
@@ -85,8 +85,8 @@ const Footer = () => (
       <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/85">
         <p>© 2026 Jewel in Christ Foundation. All Rights Reserved.</p>
         <div className="flex gap-6">
-          <a href="#" className="hover:text-primary-foreground transition-smooth">Privacy Policy</a>
-          <a href="#" className="hover:text-primary-foreground transition-smooth">Terms of Use</a>
+          <Link to="/privacy" className="hover:text-primary-foreground transition-smooth">Privacy Policy</Link>
+          <Link to="/terms" className="hover:text-primary-foreground transition-smooth">Terms of Use</Link>
           <span className="flex items-center gap-1.5"><span className="h-1.5 w-1.5 rounded-full bg-primary-foreground animate-shimmer" /> Donations Secured</span>
         </div>
       </div>
