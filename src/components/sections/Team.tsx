@@ -67,11 +67,6 @@ const team: Member[] = [
     bio: "Leads program design, research, and resource mobilisation — translating mission into measurable community impact. Brings strategic insight, operational rigour, and a deep heart for women's empowerment to every project she oversees.",
   },
   {
-    role: "Director, Finance",
-    placeholder: true,
-    bio: "This seat is reserved for our incoming Finance Director — a steward of resources committed to transparency, accountability, and the responsible growth of every gift entrusted to the foundation.",
-  },
-  {
     name: "Bello Taiwo Emmanuel",
     role: "Head, I.T",
     image: bello,
