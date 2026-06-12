@@ -5,25 +5,32 @@ import { buildMailto } from "@/lib/contact";
 
 const events = [
   {
-    title: "International Day for Rural Women",
-    date: "2026-10-15T10:00:00",
-    venue: "Enugu Civic Centre, Nigeria",
+    title: "Care for the Elderly Program",
+    date: "2026-07-26T10:00:00",
+    venue: "Abeokuta, Ogun State",
     time: "10:00 AM",
-    desc: "A day of recognition, training, and celebration honoring the resilience of rural women.",
+    desc: "Honouring our elders with care, companionship, food, and practical support — a day dedicated to dignity in old age.",
   },
   {
-    title: "Women Empowerment Seminar",
-    date: "2026-06-20T09:00:00",
-    venue: "Lagos Convention Hall",
-    time: "9:00 AM",
-    desc: "An intensive seminar on entrepreneurship, financial literacy, and leadership for women.",
+    title: "School Outreach — International Day of the Girl Child",
+    date: "2026-10-11T10:00:00",
+    venue: "Selected Schools, Ogun State",
+    time: "10:00 AM",
+    desc: "Visiting schools to mentor, equip, and inspire girls — in commemoration of the International Day of the Girl Child.",
   },
   {
-    title: "Christmas Charity for the Less Privileged",
+    title: "Rural Women Empowerment Program",
+    date: "2026-10-15T10:00:00",
+    venue: "Rural Communities, Ogun State",
+    time: "10:00 AM",
+    desc: "Skills training, micro-grants, and advocacy reaching rural women on the International Day of Rural Women.",
+  },
+  {
+    title: "Make Someone Smile at Christmas",
     date: "2026-12-20T11:00:00",
     venue: "Multiple Communities, Nigeria",
     time: "11:00 AM",
-    desc: "Sharing love, food, gifts, and hope with families and children during the festive season.",
+    desc: "Sharing love, food, gifts, and hope with families, widows, and children during the festive season.",
   },
 ];
 
