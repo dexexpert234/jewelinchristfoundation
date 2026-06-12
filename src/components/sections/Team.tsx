@@ -6,6 +6,8 @@ import sawyer from "@/assets/team-sawyer.jpg";
 import nwaolisa from "@/assets/team-nwaolisa.jpg";
 import ann from "@/assets/team-ann.jpg";
 import joterio from "@/assets/team-joterio.jpg";
+import jacob from "@/assets/advisor-jacob.jpg";
+import olateju from "@/assets/team-olateju.jpg";
 import kingsley from "@/assets/advisor-kingsley.jpg";
 import chinwe from "@/assets/advisor-chinwe.jpg";
 import uzoma from "@/assets/advisor-uzoma.jpg";
@@ -22,6 +24,7 @@ const advisoryBoard: Member[] = [
   {
     name: "Mr. Jacob Agu",
     role: "Advisory Board Member",
+    image: jacob,
     bio: "A trusted counsel and pillar of the foundation, Mr. Jacob Agu brings decades of wisdom, integrity, and family-rooted leadership to the advisory table — anchoring our mission in faith, accountability, and long-term vision.",
   },
   {
@@ -38,7 +41,7 @@ const advisoryBoard: Member[] = [
   },
   {
     name: "Mrs. Ann Nkiru Chinaka",
-    role: "Advisory Board Committee Member",
+    role: "Advisory Board Member",
     image: ann,
     bio: "A community-driven NGO advisor passionate about humanitarian service, empowerment, and sustainable development. Advocates for vulnerable populations, fosters impactful partnerships, and drives meaningful change with integrity, compassion, and innovation.",
   },
@@ -92,6 +95,12 @@ const team: Member[] = [
     image: nwaolisa,
     bio: "Tracks outcomes, measures impact, and turns data into learning — helping the foundation stay accountable to beneficiaries, donors, and the communities we serve.",
   },
+  {
+    name: "Olateju Esther Taiwo",
+    role: "Head, Fund Raising / Grants",
+    image: olateju,
+    bio: "Leads fundraising and grants strategy — building partnerships, mobilising resources, and unlocking the support that turns vision into impact for the women and communities we serve.",
+  },
 ];
 
 const Card = ({ m }: { m: Member }) => (
@@ -111,9 +120,6 @@ const Card = ({ m }: { m: Member }) => (
           {m.name && <p className="text-sm mt-2 italic">{m.name}</p>}
         </div>
       )}
-      <div className="absolute top-4 left-4 bg-primary/90 text-primary-foreground text-[10px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full backdrop-blur-sm">
-        {m.role}
-      </div>
     </div>
     <div className="p-6 flex-1 flex flex-col">
       <h3 className="font-display text-xl text-primary mb-1">{m.name ?? "To Be Announced"}</h3>

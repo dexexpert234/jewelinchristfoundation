@@ -41,12 +41,10 @@ const Navbar = () => {
     >
       <nav className="container flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="h-14 w-14 rounded-xl gradient-royal p-1.5 shadow-elegant ring-2 ring-accent/40 group-hover:scale-105 transition-smooth">
-            <img src={logo} alt="Jewel in Christ Foundation logo" className="h-full w-full object-contain rounded-md" width={56} height={56} />
-          </div>
+          <img src={logo} alt="Jewel in Christ Foundation logo" className="h-16 w-16 md:h-20 md:w-20 object-contain group-hover:scale-105 transition-smooth drop-shadow-md" width={80} height={80} />
           <div className="leading-tight">
-            <div className="font-display text-2xl font-bold text-primary">Jewel in Christ</div>
-            <div className="text-[11px] font-semibold tracking-[0.3em] text-accent uppercase">Foundation</div>
+            <div className="font-display text-2xl md:text-3xl font-extrabold text-primary tracking-tight">Jewel in Christ</div>
+            <div className="text-[11px] md:text-xs font-bold tracking-[0.35em] text-accent uppercase">Foundation</div>
           </div>
         </Link>
 
