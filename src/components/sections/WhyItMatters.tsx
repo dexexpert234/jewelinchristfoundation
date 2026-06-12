@@ -57,7 +57,7 @@ const WhyItMatters = () => (
             <p className="font-display text-2xl md:text-3xl leading-relaxed mb-6">
               "I came in with nothing but tears. I walked out with a skill, a sisterhood, and a reason to keep going. Jewel in Christ didn't just train me — they reminded me I was worth training."
             </p>
-            <footer className="text-primary-foreground/80 text-sm uppercase tracking-[0.3em]">— Blessing, vocational graduate, Abeokuta</footer>
+            <footer className="text-primary-foreground/80 text-sm uppercase tracking-[0.3em]">— Linda, vocational graduate, Abeokuta</footer>
           </blockquote>
           <div className="md:col-span-2 flex flex-col items-start md:items-end gap-4">
             <p className="text-primary-foreground/90 text-lg md:text-right md:max-w-xs">

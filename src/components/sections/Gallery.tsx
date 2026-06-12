@@ -22,7 +22,11 @@ import n3 from "@/assets/gallery-new-3.jpg";
 import n4 from "@/assets/gallery-new-4.jpg";
 import n5 from "@/assets/gallery-new-5.jpg";
 import n6 from "@/assets/gallery-new-6.jpg";
-// duplicates of gallery-extra-7..10 removed
+import prayer1 from "@/assets/gallery-prayer-1.jpg";
+import prayer2 from "@/assets/gallery-prayer-2.jpg";
+import prayer3 from "@/assets/gallery-prayer-3.jpg";
+import snacks from "@/assets/gallery-snacks.jpg";
+import videoAsset from "@/assets/gallery-video.mp4.asset.json";
 
 const photos = [
   { src: j1, caption: "Christmas outreach — gift presentation" },
@@ -49,7 +53,10 @@ const photos = [
   { src: n4, caption: "Supporters standing with the foundation" },
   { src: n5, caption: "Recognising a woman of impact" },
   { src: n6, caption: "Honouring Mrs. Titi Akinlawon, SAN" },
-  // duplicates removed: gallery-new-7..10 mirrored gallery-extra-7..10
+  { src: prayer1, caption: "Pictures taken after women's prayer meeting" },
+  { src: prayer2, caption: "Jewel in Christ team — monthly prayer fellowship" },
+  { src: prayer3, caption: "Women's ministry mentorship session" },
+  { src: snacks, caption: "Trying out snacks after a skills acquisition program on baking" },
 ];
 
 const Gallery = () => (
@@ -64,6 +71,18 @@ const Gallery = () => (
       </div>
 
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [&>*]:mb-5">
+        <figure className="group relative overflow-hidden rounded-3xl shadow-card break-inside-avoid">
+          <video
+            src={videoAsset.url}
+            className="w-full h-auto object-cover"
+            controls
+            playsInline
+            preload="metadata"
+          />
+          <figcaption className="absolute inset-x-0 top-0 p-4 bg-gradient-to-b from-primary/95 via-primary/60 to-transparent text-primary-foreground text-sm">
+            Highlights from our recent outreach
+          </figcaption>
+        </figure>
         {photos.map((p, i) => (
           <figure key={i} className="group relative overflow-hidden rounded-3xl shadow-card break-inside-avoid">
             <img

@@ -1,6 +1,6 @@
 import j1 from "@/assets/jewel-1.jpg";
 import j7 from "@/assets/jewel-7.jpg";
-import n2 from "@/assets/gallery-new-2.jpg";
+import n6 from "@/assets/gallery-new-6.jpg";
 
 export type Post = {
   slug: string;
@@ -48,10 +48,10 @@ export const posts: Post[] = [
   {
     slug: "international-womens-day-2026",
     tag: "Field Notes",
-    date: "Feb 04, 2026",
+    date: "Mar 08, 2026",
     title: "International Women's Day 2026 — A Day of Honour",
     excerpt: "Our IWD celebration brought together women of impact, awards, and a renewed call to action.",
-    image: n2,
+    image: n6,
     readMinutes: 5,
     content: [
       "Every year on International Women's Day, we pause our outreach to do something equally sacred — we honour the women who have already done the work. The mothers who raised entire villages. The teachers who taught for half a salary. The widows who refused to disappear.",

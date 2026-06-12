@@ -5,6 +5,7 @@ import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
 import Blog from "@/components/sections/Blog";
 import WhyItMatters from "@/components/sections/WhyItMatters";
+import WomensMinistry from "@/components/sections/WomensMinistry";
 import { useReveal } from "@/hooks/use-reveal";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
     <Stats />
     <About />
     <WhyItMatters />
+    <WomensMinistry />
     <Blog />
   </SiteLayout>
   );

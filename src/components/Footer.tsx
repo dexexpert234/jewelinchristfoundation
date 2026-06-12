@@ -11,10 +11,10 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <img src={logo} alt="Logo" className="h-12 w-12 object-contain rounded-md" width={48} height={48} />
+            <img src={logo} alt="Logo" className="h-16 w-16 object-contain drop-shadow-md" width={64} height={64} />
             <div>
-              <div className="font-display text-xl">Jewel in Christ</div>
-              <div className="text-[10px] tracking-[0.25em] text-primary-foreground/90 uppercase">Foundation</div>
+              <div className="font-display text-2xl font-extrabold tracking-tight">Jewel in Christ</div>
+              <div className="text-[11px] font-bold tracking-[0.3em] text-primary-foreground/95 uppercase">Foundation</div>
             </div>
           </div>
           <p className="text-sm text-primary-foreground/90 leading-relaxed mb-5">
