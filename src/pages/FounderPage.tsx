@@ -1,0 +1,254 @@
+import SiteLayout from "@/components/layout/SiteLayout";
+import Seo from "@/components/Seo";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Award, BookOpen, GraduationCap, Heart, Users, Scale, Globe, Sparkles, Briefcase, Quote } from "lucide-react";
+import leader from "@/assets/leader.jpg";
+import { buildMailto } from "@/lib/contact";
+
+const credentials = ["LLB", "BL", "LLM", "ACIS", "PhD Candidate"];
+
+const timeline = [
+  { year: "27+ Years", title: "Legal Practitioner", desc: "Banking, corporate law, private legal practice, and public service." },
+  { year: "Director", title: "Legal Services", desc: "Director of Legal Services & Secretary to the Board — Ogun-Oshun River Basin Development Authority." },
+  { year: "Head", title: "Public-Private Partnership Unit", desc: "Leading PPP initiatives and ethical governance reforms." },
+  { year: "Today", title: "Humanitarian & Mentor", desc: "Founder of Jewels-in-Christ Foundation, Peace Ambassador and Lay Missionary." },
+];
+
+const education = [
+  "Bachelor of Laws (LLB)",
+  "Barrister-at-Law (BL)",
+  "Master of Laws (LLM)",
+  "Special Executive MBA",
+  "University of Huddersfield, United Kingdom",
+  "Metropolitan School of Business and Management (UK)",
+  "Currently pursuing a PhD",
+];
+
+const memberships = [
+  { role: "Life Member", org: "Women in Management, Business and Public Service (WIMBIZ)" },
+  { role: "Member", org: "Nigerian Bar Association" },
+  { role: "Member", org: "Commonwealth Lawyers Association" },
+  { role: "Member", org: "Nigerian-Britain Association" },
+  { role: "Alumnus", org: "IHE Delft Institute" },
+  { role: "Alumnus", org: "Metropolitan School of Business and Management" },
+];
+
+const FounderPage = () => (
+  <SiteLayout>
+    <Seo
+      title="About the Founder — Barrister Judith Ngozi Agu"
+      description="Meet Barrister Judith Ngozi Agu — lawyer, humanitarian, mentor and visionary founder of Jewels-in-Christ Foundation."
+      path="/founder"
+    />
+
+    {/* HERO */}
+    <section className="relative gradient-royal text-primary-foreground overflow-hidden">
+      <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, hsl(var(--accent)) 0%, transparent 50%)" }} />
+      <div className="container relative z-10 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div className="reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Meet Our Founder</p>
+          <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-6">
+            Barrister <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Judith Ngozi Agu</em>
+          </h1>
+          <p className="text-lg text-primary-foreground/90 mb-6 max-w-xl">
+            A Lawyer. A Humanitarian. A Mentor. A Woman Dedicated to Transforming Lives Through Compassion, Leadership, and Service.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {credentials.map((c) => (
+              <span key={c} className="px-3 py-1.5 rounded-full bg-primary-foreground/10 border border-primary-foreground/25 text-xs font-semibold tracking-wider">
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="reveal">
+          <div className="relative rounded-3xl overflow-hidden shadow-elegant ring-1 ring-primary-foreground/20">
+            <img src={leader} alt="Barrister Judith Ngozi Agu" className="w-full h-[520px] object-cover" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* BIOGRAPHY */}
+    <section className="py-24 bg-background">
+      <div className="container max-w-4xl">
+        <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4 text-center reveal">Biography</p>
+        <h2 className="font-display text-4xl md:text-5xl text-primary text-center mb-10 reveal">Who is <em className="not-italic text-gradient-royal font-semibold">Barrister Judith Ngozi Agu?</em></h2>
+        <div className="space-y-5 text-muted-foreground leading-relaxed text-lg reveal">
+          <p>Barrister Judith Ngozi Agu is an accomplished legal practitioner, public servant, humanitarian, mentor, author, and visionary leader with over twenty-seven years of professional experience spanning banking, corporate law, private legal practice, and public service.</p>
+          <p>Throughout her career, she has consistently demonstrated a passion for justice, ethical leadership, community development, and the empowerment of vulnerable individuals.</p>
+          <p>Her life's work reflects a rare combination of professional excellence, compassionate service, and unwavering faith in God. She believes that true leadership is measured not by position, but by the number of lives transformed through selfless service.</p>
+          <p>Today, she continues to inspire individuals, families, communities, and organizations through her leadership and humanitarian efforts.</p>
+        </div>
+      </div>
+    </section>
+
+    {/* TIMELINE */}
+    <section className="py-24 bg-secondary">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-14 reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Professional Journey</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary">Career <em className="not-italic text-gradient-royal font-semibold">Highlights</em></h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {timeline.map((t, i) => (
+            <div key={i} className="p-7 rounded-3xl bg-card border border-border shadow-card hover:shadow-elegant transition-smooth reveal">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-12 w-12 rounded-2xl gradient-royal flex items-center justify-center">
+                  <Briefcase className="h-5 w-5 text-accent" />
+                </div>
+                <div className="text-accent text-xs uppercase tracking-[0.3em]">{t.year}</div>
+              </div>
+              <h3 className="font-display text-2xl text-primary mb-2">{t.title}</h3>
+              <p className="text-muted-foreground">{t.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {["Corporate Governance Professional","Chartered Secretary","Expert in Public-Private Partnerships","Advocate for Ethical Governance"].map((p) => (
+            <div key={p} className="p-4 rounded-xl bg-card border border-border text-sm text-primary text-center font-medium reveal">{p}</div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* EDUCATION */}
+    <section className="py-24 bg-background">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-14 reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Educational Excellence</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary">A Lifelong Commitment to <em className="not-italic text-gradient-royal font-semibold">Learning</em></h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {education.map((e, i) => (
+            <div key={i} className="group p-7 rounded-3xl bg-card border border-border shadow-card hover:shadow-elegant transition-smooth reveal">
+              <div className="h-12 w-12 rounded-2xl gradient-royal flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth">
+                <GraduationCap className="h-6 w-6 text-accent" />
+              </div>
+              <p className="text-primary font-medium">{e}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* PHILOSOPHY */}
+    <section className="py-24 gradient-royal text-primary-foreground relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 80%, hsl(var(--accent)) 0%, transparent 50%)" }} />
+      <div className="container relative z-10 max-w-4xl text-center reveal">
+        <Quote className="h-12 w-12 text-accent mx-auto mb-6" />
+        <p className="font-display text-3xl md:text-5xl leading-tight mb-8 italic">
+          "Leadership is selfless service with a heart of love."
+        </p>
+        <p className="text-primary-foreground/85 text-lg leading-relaxed">
+          This philosophy has guided Barrister Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewels-in-Christ Foundation.
+        </p>
+      </div>
+    </section>
+
+    {/* MEMBERSHIPS */}
+    <section className="py-24 bg-background">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-14 reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Professional Memberships</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary">Affiliations & <em className="not-italic text-gradient-royal font-semibold">Recognitions</em></h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {memberships.map((m) => (
+            <div key={m.org} className="p-6 rounded-3xl bg-card border border-border shadow-card hover:shadow-elegant transition-smooth reveal">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-10 w-10 rounded-xl bg-secondary flex items-center justify-center">
+                  <Award className="h-5 w-5 text-accent" />
+                </div>
+                <span className="text-xs uppercase tracking-widest text-accent font-semibold">{m.role}</span>
+              </div>
+              <p className="text-primary font-medium">{m.org}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* COMMUNITY */}
+    <section className="py-24 bg-secondary">
+      <div className="container grid md:grid-cols-2 gap-12 items-center">
+        <div className="reveal">
+          <div className="inline-flex items-center gap-2 text-accent text-xs uppercase tracking-[0.4em] mb-4">
+            <Globe className="h-4 w-4" /> Community Leadership
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">Serving Beyond the <em className="not-italic text-gradient-royal font-semibold">Courtroom</em></h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>Beyond her legal profession, Barrister Judith Agu has devoted herself to humanitarian service, women empowerment, girl-child education, conflict resolution, protection of vulnerable persons, and family development.</p>
+            <p>She serves as a Peace Ambassador and Lay Missionary, believing that lasting transformation begins when people are empowered with opportunities, guidance, and hope.</p>
+            <p>Her service extends beyond institutions into communities where she continues to inspire positive social change.</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 gap-4 reveal">
+          {[
+            { icon: Users, label: "Women Empowerment" },
+            { icon: Heart, label: "Vulnerable Persons" },
+            { icon: Scale, label: "Conflict Resolution" },
+            { icon: Sparkles, label: "Peace Ambassador" },
+          ].map((x, i) => (
+            <div key={i} className="p-6 rounded-3xl bg-card border border-border shadow-card text-center">
+              <x.icon className="h-8 w-8 text-accent mx-auto mb-3" />
+              <p className="text-primary font-medium text-sm">{x.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* AUTHOR */}
+    <section className="py-24 bg-background">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-14 reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Author & Thought Leader</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary">Words That <em className="not-italic text-gradient-royal font-semibold">Inspire Action</em></h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+          <div className="reveal flex justify-center">
+            <div className="relative w-64 h-80 rounded-2xl gradient-royal shadow-elegant flex flex-col items-center justify-center text-primary-foreground p-6 text-center rotate-[-3deg] hover:rotate-0 transition-smooth">
+              <BookOpen className="h-10 w-10 text-accent mb-4" />
+              <div className="text-[10px] uppercase tracking-[0.3em] text-accent mb-2">Book</div>
+              <div className="font-display text-2xl leading-tight">30 Vital Principles for Success</div>
+              <div className="mt-4 text-xs text-primary-foreground/80">by Judith Ngozi Agu</div>
+            </div>
+          </div>
+          <div className="reveal">
+            <h3 className="font-display text-3xl text-primary mb-4">30 Vital Principles for Success</h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              A practical guide written to inspire individuals to unlock their God-given potential, embrace purposeful living, and pursue personal and professional excellence.
+            </p>
+            <p className="text-sm text-accent italic">More publications coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA */}
+    <section className="py-24 gradient-royal text-primary-foreground relative overflow-hidden">
+      <div className="absolute inset-0 opacity-15" style={{ backgroundImage: "radial-gradient(circle at 50% 50%, hsl(var(--accent)) 0%, transparent 60%)" }} />
+      <div className="container relative z-10 text-center max-w-3xl reveal">
+        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-6">Together We Can <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Transform More Lives</em></h2>
+        <p className="text-primary-foreground/90 text-lg mb-10">
+          Every act of kindness creates an opportunity for hope. Whether through volunteering, donating, partnering, or simply sharing our mission, you become part of a movement that empowers people, strengthens families, and transforms communities.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button asChild variant="hero" size="lg" className="h-14 px-8">
+            <a href={buildMailto("Volunteer Application — Jewels in Christ Foundation")} target="_blank" rel="noopener noreferrer"><Users className="h-5 w-5" /> Become a Volunteer</a>
+          </Button>
+          <Button asChild variant="outlineGold" size="lg" className="h-14 px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-background">
+            <Link to="/donate"><Heart className="h-5 w-5" /> Donate Today</Link>
+          </Button>
+        </div>
+        <p className="mt-12 text-sm italic text-primary-foreground/80">
+          "Service rooted in compassion leaves a legacy that outlives generations."
+        </p>
+      </div>
+    </section>
+  </SiteLayout>
+);
+
+export default FounderPage;

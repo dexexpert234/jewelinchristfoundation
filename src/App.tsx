@@ -17,6 +17,7 @@ import BlogPostPage from "./pages/BlogPostPage.tsx";
 import ProgramDetailPage from "./pages/ProgramDetailPage.tsx";
 import PrivacyPage from "./pages/PrivacyPage.tsx";
 import TermsPage from "./pages/TermsPage.tsx";
+import FounderPage from "./pages/FounderPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Preloader from "./components/Preloader";
 import PageTransition from "./components/PageTransition";
@@ -74,6 +75,7 @@ const App = () => {
               <Route path="/stories/:slug" element={<BlogPostPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/terms" element={<TermsPage />} />
+              <Route path="/founder" element={<FounderPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

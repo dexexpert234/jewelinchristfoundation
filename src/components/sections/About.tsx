@@ -1,4 +1,6 @@
-import { Eye, Target, Award } from "lucide-react";
+import { Eye, Target, Award, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import leader from "@/assets/leader.jpg";
 
 const About = () => (
@@ -54,7 +56,20 @@ const About = () => (
           <p className="text-muted-foreground leading-relaxed">
             Together with a passionate team of staff, volunteers, and partners, we serve communities across Nigeria and beyond — bridging gaps, breaking cycles, and building futures that flourish.
           </p>
+          <Button asChild variant="royal" size="lg" className="mt-8">
+            <Link to="/founder">Read More About Our Founder <ArrowRight className="h-4 w-4" /></Link>
+          </Button>
         </div>
+      </div>
+
+      <div className="mt-20 relative rounded-3xl overflow-hidden gradient-royal text-primary-foreground p-10 md:p-16 text-center shadow-elegant">
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 50% 0%, hsl(var(--accent)) 0%, transparent 60%)" }} />
+        <p className="relative text-accent text-xs uppercase tracking-[0.4em] mb-5">Our Motto</p>
+        <h3 className="relative font-display text-3xl md:text-5xl leading-tight">
+          Empowering People. <br className="hidden md:block" />
+          <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Strengthening Families.</em> <br className="hidden md:block" />
+          Transforming Communities.
+        </h3>
       </div>
     </div>
   </section>

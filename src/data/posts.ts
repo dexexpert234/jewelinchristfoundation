@@ -17,7 +17,7 @@ export const posts: Post[] = [
   {
     slug: "vocational-training-rewriting-futures",
     tag: "Impact Story",
-    date: "Mar 12, 2026",
+    date: "Dec, 2023",
     title: "How Vocational Training is Rewriting Futures",
     excerpt: "Meet women whose lives were transformed by our latest cohort and outreach in Abeokuta.",
     image: j1,
@@ -33,7 +33,7 @@ export const posts: Post[] = [
   {
     slug: "school-outreach-program",
     tag: "Outreach",
-    date: "Feb 28, 2026",
+    date: "2024",
     title: "Sharing Joy: School Outreach Program",
     excerpt: "A look back at our recent visit to pupils — building hope, books, and bright futures.",
     image: j7,
