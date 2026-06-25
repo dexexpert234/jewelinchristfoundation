@@ -68,7 +68,7 @@ const WomensMinistry = () => (
           <MapPin className="h-5 w-5 text-accent mt-0.5 shrink-0" />
           <div>
             <p className="text-xs uppercase tracking-widest text-accent mb-1">Venue</p>
-            <p className="text-primary font-medium">Club House, Ogun-Osun River Basin Development Authority</p>
+            <p className="text-primary font-medium">Bishop Olukayode Odetoyinbo Hall, Ogun State Police Command, Elewe-eran (Beside POWA Hall)</p>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const events = [
   {
     title: "Rural Women Empowerment Program",
     date: "2026-10-15T10:00:00",
-    venue: "Rural Communities, Ogun State",
+    venue: "Rural Communities, Ogun & Enugu State",
     time: "10:00 AM",
     desc: "Skills training, micro-grants, and advocacy reaching rural women on the International Day of Rural Women.",
   },

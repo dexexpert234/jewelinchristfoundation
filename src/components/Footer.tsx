@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -21,12 +21,19 @@ const Footer = () => (
             Empowering women, transforming families, and building thriving communities through faith, skills, and advocacy.
           </p>
           <div className="flex gap-2">
-            {[Facebook, Instagram, Twitter, Linkedin].map((I, i) => (
-              <a key={i} href="#" aria-label="social" className="h-9 w-9 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground hover:text-background transition-smooth">
-                <I className="h-4 w-4" />
-              </a>
-            ))}
+            <a href="https://www.facebook.com/share/17Q7pPSwRC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="h-9 w-9 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground hover:text-background transition-smooth">
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a href="https://www.linkedin.com/in/judith-agu-60649b57?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="h-9 w-9 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground hover:text-background transition-smooth">
+              <Linkedin className="h-4 w-4" />
+            </a>
           </div>
+          <p className="mt-6 text-xs italic text-primary-foreground/80 border-l-2 border-accent pl-3">
+            "Service rooted in compassion leaves a legacy that outlives generations."
+          </p>
+          <p className="mt-4 text-[11px] uppercase tracking-[0.3em] text-accent">
+            Empowering People · Strengthening Families · Transforming Communities
+          </p>
         </div>
 
         <div>
