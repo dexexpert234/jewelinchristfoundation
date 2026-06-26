@@ -18,6 +18,11 @@ import ProgramDetailPage from "./pages/ProgramDetailPage.tsx";
 import PrivacyPage from "./pages/PrivacyPage.tsx";
 import TermsPage from "./pages/TermsPage.tsx";
 import FounderPage from "./pages/FounderPage.tsx";
+import OurStoryPage from "./pages/OurStoryPage.tsx";
+import LeadershipLegacyPage from "./pages/LeadershipLegacyPage.tsx";
+import WhyWeExistPage from "./pages/WhyWeExistPage.tsx";
+import PublicationsPage from "./pages/PublicationsPage.tsx";
+import VolunteerPage from "./pages/VolunteerPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Preloader from "./components/Preloader";
 import PageTransition from "./components/PageTransition";
@@ -76,6 +81,11 @@ const App = () => {
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/founder" element={<FounderPage />} />
+              <Route path="/our-story" element={<OurStoryPage />} />
+              <Route path="/leadership-legacy" element={<LeadershipLegacyPage />} />
+              <Route path="/why-we-exist" element={<WhyWeExistPage />} />
+              <Route path="/publications" element={<PublicationsPage />} />
+              <Route path="/volunteer" element={<VolunteerPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
