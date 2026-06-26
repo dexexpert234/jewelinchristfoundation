@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -47,15 +47,8 @@ const Contact = () => {
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary-foreground/80 shrink-0 mt-0.5" />
-                  <span>Enugu, Nigeria</span>
+                  <span>Abuja, Nigeria</span>
                 </div>
-              </div>
-              <div className="flex gap-3 mt-6 pt-6 border-t border-primary-foreground/20">
-                {[Facebook, Instagram, Twitter, Linkedin].map((I, i) => (
-                  <a key={i} href="#" aria-label="social" className="h-10 w-10 rounded-full border border-primary-foreground/40 flex items-center justify-center hover:bg-primary-foreground hover:text-background transition-smooth">
-                    <I className="h-4 w-4" />
-                  </a>
-                ))}
               </div>
             </div>
             <div className="rounded-3xl overflow-hidden shadow-card border border-border h-64">

@@ -6,20 +6,11 @@ import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
 
 const menu = [
-  { label: "Home", to: "/" },
-  { label: "About Us", to: "/#about" },
   { label: "About the Founder", to: "/founder" },
   { label: "Our Story", to: "/our-story" },
-  { label: "Leadership & Legacy", to: "/leadership-legacy" },
-  { label: "Why We Exist", to: "/why-we-exist" },
-  { label: "Team", to: "/team" },
+  { label: "Teams", to: "/team" },
   { label: "Programs", to: "/programs" },
-  { label: "Publications", to: "/publications" },
-  { label: "Events", to: "/events" },
   { label: "Gallery", to: "/gallery" },
-  { label: "Stories", to: "/stories" },
-  { label: "Volunteer", to: "/volunteer" },
-  { label: "Donate", to: "/donate" },
   { label: "Contact", to: "/contact" },
 ];
 
