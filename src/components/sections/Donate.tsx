@@ -31,6 +31,11 @@ const Donate = () => {
             <p className="text-muted-foreground leading-relaxed mb-8">
               Every donation directly funds skills training, micro-grants, and advocacy for women rebuilding their lives. 100% transparent. 100% impact.
             </p>
+            <div className="mb-8 p-5 rounded-2xl bg-card border-l-4 border-accent shadow-card">
+              <p className="text-sm text-muted-foreground leading-relaxed italic">
+                Every donation creates an opportunity. A small act of generosity can become someone's beginning — just as a simple ₦3,000 act of kindness inspired the birth of this foundation. Together we can continue creating opportunities that empower people, strengthen families, and transform communities.
+              </p>
+            </div>
             <div className="space-y-4">
               {[
                 { icon: ShieldCheck, t: "Secure & encrypted", d: "Bank-grade SSL on every transaction" },
