@@ -19,6 +19,12 @@ const entries: SitemapEntry[] = [
   { path: "/contact", changefreq: "monthly", priority: "0.7" },
   { path: "/team", changefreq: "monthly", priority: "0.7" },
   { path: "/stories", changefreq: "weekly", priority: "0.8" },
+  { path: "/founder", changefreq: "monthly", priority: "0.7" },
+  { path: "/our-story", changefreq: "monthly", priority: "0.8" },
+  { path: "/leadership-legacy", changefreq: "monthly", priority: "0.7" },
+  { path: "/why-we-exist", changefreq: "monthly", priority: "0.7" },
+  { path: "/publications", changefreq: "monthly", priority: "0.6" },
+  { path: "/volunteer", changefreq: "monthly", priority: "0.8" },
 ];
 
 const xml = [
