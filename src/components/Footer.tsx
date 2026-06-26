@@ -41,12 +41,12 @@ const Footer = () => (
           <ul className="space-y-2.5 text-sm text-primary-foreground/90">
             {[
               { l: "Home", to: "/" },
-              { l: "About Us", to: "/#about" },
-              { l: "Team", to: "/team" },
+              { l: "About the Founder", to: "/founder" },
+              { l: "Our Story", to: "/our-story" },
+              { l: "Leadership & Legacy", to: "/leadership-legacy" },
               { l: "Programs", to: "/programs" },
-              { l: "Events", to: "/events" },
-              { l: "Gallery", to: "/gallery" },
-              { l: "Stories", to: "/stories" },
+              { l: "Volunteer", to: "/volunteer" },
+              { l: "Donate", to: "/donate" },
               { l: "Contact", to: "/contact" },
             ].map((x) => (
               <li key={x.l}><Link to={x.to} className="hover:text-primary-foreground transition-smooth">{x.l}</Link></li>
