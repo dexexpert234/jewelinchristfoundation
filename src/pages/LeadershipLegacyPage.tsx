@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Scale, Briefcase, Building2, Handshake, Users, GraduationCap, Dove, Home, Lightbulb, HeartHandshake, Cross, Shield, Quote, Heart, HandHeart } from "lucide-react";
+import { Scale, Briefcase, Building2, Handshake, Users, GraduationCap, Feather, Home, Lightbulb, HeartHandshake, Cross, Shield, Quote, Heart, HandHeart } from "lucide-react";
 import SiteLayout from "@/components/layout/SiteLayout";
 import Seo from "@/components/Seo";
 import PageHero from "@/components/PageHero";
@@ -21,7 +21,7 @@ const impact = [
   { icon: Handshake, t: "Public-Private Partnerships" },
   { icon: Users, t: "Women Empowerment" },
   { icon: GraduationCap, t: "Girl-Child Education" },
-  { icon: Dove, t: "Peacebuilding" },
+  { icon: Feather, t: "Peacebuilding" },
   { icon: Home, t: "Community Development" },
   { icon: Lightbulb, t: "Mentorship" },
   { icon: HeartHandshake, t: "Family Support" },
