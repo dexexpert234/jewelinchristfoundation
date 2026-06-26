@@ -40,13 +40,11 @@ const Footer = () => (
           <h4 className="font-display text-lg text-primary-foreground mb-5">Quick Links</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/90">
             {[
-              { l: "Home", to: "/" },
               { l: "About the Founder", to: "/founder" },
               { l: "Our Story", to: "/our-story" },
-              { l: "Leadership & Legacy", to: "/leadership-legacy" },
+              { l: "Teams", to: "/team" },
               { l: "Programs", to: "/programs" },
-              { l: "Volunteer", to: "/volunteer" },
-              { l: "Donate", to: "/donate" },
+              { l: "Gallery", to: "/gallery" },
               { l: "Contact", to: "/contact" },
             ].map((x) => (
               <li key={x.l}><Link to={x.to} className="hover:text-primary-foreground transition-smooth">{x.l}</Link></li>
