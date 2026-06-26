@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChevronDown, Heart, HandHeart, Quote, Calendar, Sparkles } from "lucide-react";
+import { ChevronDown, Heart, HandHeart, Quote, Calendar, Sparkles, Users, Home as HomeIcon, GraduationCap, Shield, Feather, Building2, Cross, Crown } from "lucide-react";
 import SiteLayout from "@/components/layout/SiteLayout";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
@@ -30,6 +30,17 @@ const initials = (name: string) =>
     .slice(0, 2)
     .join("")
     .toUpperCase();
+
+const commitments = [
+  { icon: Users, t: "Empower Women", d: "Equip women with skills, capital, and confidence to thrive." },
+  { icon: HomeIcon, t: "Support Families", d: "Strengthen households through practical, compassionate support." },
+  { icon: GraduationCap, t: "Mentor Young People", d: "Guide the next generation to discover purpose and excellence." },
+  { icon: Shield, t: "Protect Vulnerable Persons", d: "Stand with the marginalized; restore dignity and safety." },
+  { icon: Feather, t: "Promote Peace", d: "Build bridges of reconciliation across families and communities." },
+  { icon: Building2, t: "Develop Communities", d: "Invest in long-term, sustainable community transformation." },
+  { icon: Cross, t: "Strengthen Faith", d: "Anchor every effort in faith, hope, and love." },
+  { icon: Crown, t: "Encourage Leadership", d: "Raise servant leaders who serve with integrity and heart." },
+];
 
 const OurStoryPage = () => (
   <SiteLayout>
@@ -192,6 +203,53 @@ const OurStoryPage = () => (
           <p>What began with one woman's determination to help another has grown into a movement of compassion, service, and hope.</p>
           <p>For more than sixteen years, the foundation has remained committed to building stronger communities through faith, love, integrity, and action.</p>
         </div>
+      </div>
+    </section>
+
+    {/* SECTION 8 — Closing */}
+    {/* WHY WE EXIST */}
+    <section className="py-24 md:py-28 bg-background">
+      <div className="container max-w-3xl mx-auto reveal">
+        <div className="text-center mb-10">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Our Reason for Being</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary mb-4">Why We Exist</h2>
+          <p className="text-muted-foreground italic">Because one opportunity can change a life forever.</p>
+        </div>
+        <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
+          <p>Jewel in Christ Foundation exists because too many people possess dreams but lack opportunities.</p>
+          <p>Too many women possess skills but lack capital. Too many children possess potential but lack guidance. Too many families possess hope but lack support.</p>
+          <p>Our foundation believes that lasting transformation begins when compassion meets action.</p>
+          <p className="text-primary font-medium">We exist to bridge that gap.</p>
+          <ul className="space-y-2 pl-5 border-l-4 border-accent">
+            <li>We exist to empower individuals with opportunities.</li>
+            <li>We exist to strengthen families through practical support.</li>
+            <li>We exist to restore dignity to vulnerable communities.</li>
+            <li>We exist because every person deserves the opportunity to thrive.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section className="py-24 gradient-soft">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-14 reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Our Commitment</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary">What We Promise to Do</h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {commitments.map(({ icon: Icon, t, d }) => (
+            <div key={t} className="reveal bg-card rounded-2xl p-6 border border-border shadow-card hover:shadow-elegant transition-smooth">
+              <div className="h-12 w-12 rounded-xl gradient-royal flex items-center justify-center mb-4">
+                <Icon className="h-5 w-5 text-accent" />
+              </div>
+              <p className="font-display text-lg text-primary mb-2">{t}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{d}</p>
+            </div>
+          ))}
+        </div>
+        <p className="max-w-3xl mx-auto text-center font-display text-2xl md:text-3xl text-primary italic leading-relaxed mt-14 reveal">
+          "Our mission is to ensure that hope is never out of reach for anyone willing to build a better future."
+        </p>
       </div>
     </section>
 

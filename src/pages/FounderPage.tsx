@@ -2,7 +2,7 @@ import SiteLayout from "@/components/layout/SiteLayout";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Award, BookOpen, GraduationCap, Heart, Users, Scale, Globe, Sparkles, Briefcase, Quote } from "lucide-react";
+import { Award, BookOpen, GraduationCap, Heart, Users, Scale, Globe, Sparkles, Briefcase, Quote, Building2, Handshake, Feather, Home, Lightbulb, HeartHandshake, Cross, Shield } from "lucide-react";
 import leader from "@/assets/leader.jpg";
 import { buildMailto } from "@/lib/contact";
 
@@ -32,6 +32,28 @@ const memberships = [
   { role: "Member", org: "Nigerian-Britain Association" },
   { role: "Alumnus", org: "IHE Delft Institute" },
   { role: "Alumnus", org: "Metropolitan School of Business and Management" },
+];
+
+const legacyStats = [
+  { v: "27+", l: "Years of Professional Experience" },
+  { v: "16+", l: "Years of Humanitarian Service" },
+  { v: "1", l: "Vision That Inspired a Movement" },
+  { v: "1000s", l: "Lives Positively Influenced" },
+];
+
+const impactAreas = [
+  { icon: Scale, t: "Legal Practice" },
+  { icon: Briefcase, t: "Public Service" },
+  { icon: Building2, t: "Corporate Governance" },
+  { icon: Handshake, t: "Public-Private Partnerships" },
+  { icon: Users, t: "Women Empowerment" },
+  { icon: GraduationCap, t: "Girl-Child Education" },
+  { icon: Feather, t: "Peacebuilding" },
+  { icon: Home, t: "Community Development" },
+  { icon: Lightbulb, t: "Mentorship" },
+  { icon: HeartHandshake, t: "Family Support" },
+  { icon: Cross, t: "Christian Leadership" },
+  { icon: Shield, t: "Conflict Resolution" },
 ];
 
 const FounderPage = () => (
@@ -196,6 +218,44 @@ const FounderPage = () => (
               <p className="text-primary font-medium text-sm">{x.label}</p>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+    {/* AUTHOR */}
+    {/* LEADERSHIP & LEGACY */}
+    <section className="py-24 gradient-soft">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-12 reveal">
+          <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Leadership & Legacy</p>
+          <h2 className="font-display text-4xl md:text-5xl text-primary mb-4">A Servant Leader. A Builder of Hope.</h2>
+          <p className="text-muted-foreground leading-relaxed">For more than twenty-seven years, Barrister Judith Ngozi Agu has combined legal excellence, ethical leadership, and compassionate service to create opportunities that empower people, strengthen families, and transform communities.</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-14">
+          {legacyStats.map((s) => (
+            <div key={s.l} className="bg-card rounded-2xl p-6 border border-border shadow-card text-center reveal">
+              <p className="font-display text-4xl md:text-5xl text-gradient-royal mb-2">{s.v}</p>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">{s.l}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-14">
+          {impactAreas.map(({ icon: Icon, t }) => (
+            <div key={t} className="reveal bg-card rounded-2xl p-6 border border-border shadow-card hover:shadow-elegant transition-smooth">
+              <div className="h-12 w-12 rounded-xl gradient-royal flex items-center justify-center mb-4">
+                <Icon className="h-5 w-5 text-accent" />
+              </div>
+              <p className="font-display text-lg text-primary">{t}</p>
+            </div>
+          ))}
+        </div>
+        <div className="max-w-3xl mx-auto text-center reveal">
+          <h3 className="font-display text-3xl md:text-4xl text-primary mb-6">A Legacy Still Growing</h3>
+          <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+            <p>The impact of leadership is not measured by titles or positions. It is measured by transformed lives.</p>
+            <p className="text-primary font-medium">Every woman empowered. Every child encouraged. Every family restored. Every community strengthened.</p>
+            <p>These are the true achievements that define the legacy of Jewel in Christ Foundation.</p>
+          </div>
         </div>
       </div>
     </section>
