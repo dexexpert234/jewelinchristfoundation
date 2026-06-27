@@ -27,35 +27,36 @@ import prayer2 from "@/assets/gallery-prayer-2.jpg";
 import prayer3 from "@/assets/gallery-prayer-3.jpg";
 import snacks from "@/assets/gallery-snacks.jpg";
 import videoAsset from "@/assets/gallery-video.mp4.asset.json";
+import juvenileVideoAsset from "@/assets/gallery-juvenile-asero.mp4.asset.json";
 
 const photos = [
-  { src: j1, caption: "Christmas outreach — gift presentation" },
-  { src: j2, caption: "Jewel in Christ team with beneficiary" },
-  { src: j3, caption: "Sharing care packages with pupils" },
-  { src: j4, caption: "Empowering young scholars" },
-  { src: j5, caption: "Joyful classroom celebration" },
-  { src: j6, caption: "Balloon outreach in primary school" },
-  { src: j7, caption: "School-wide pupils outreach" },
+  { src: j1, caption: "Make Someone Smile at Christmas Outreach" },
+  { src: j2, caption: "Make Someone Smile at Christmas Outreach" },
+  { src: j3, caption: "School Outreach — International Day of the Girl Child" },
+  { src: j4, caption: "School Outreach — International Day of the Girl Child" },
+  { src: j5, caption: "School Outreach — International Day of the Girl Child" },
+  { src: j6, caption: "School Outreach — International Day of the Girl Child" },
+  { src: j7, caption: "School Outreach — International Day of the Girl Child" },
   { src: j8, caption: "Partnership with Obijackson Foundation" },
-  { src: g1, caption: "2026 International Women's Day — high table address" },
-  { src: g2, caption: "Honouring excellence — recognition award" },
-  { src: g3, caption: "Welcome remarks at the IWD celebration" },
-  { src: g4, caption: "Solidarity in purple — supporters of the cause" },
-  { src: g5, caption: "Recognising women of distinction" },
-  { src: g6, caption: "Award presentation to a community matriarch" },
-  { src: g7, caption: "Food parcels distributed to women in need" },
-  { src: g8, caption: "₦50,000 micro-grant presented to a beneficiary" },
-  { src: g9, caption: "Group photo — women's empowerment gathering" },
-  { src: g10, caption: "Community engagement & outreach in session" },
+  { src: g1, caption: "2026 International Women's Day Celebration" },
+  { src: g2, caption: "2026 International Women's Day Celebration" },
+  { src: g3, caption: "2026 International Women's Day Celebration" },
+  { src: g4, caption: "2026 International Women's Day Celebration" },
+  { src: g5, caption: "2026 International Women's Day Celebration" },
+  { src: g6, caption: "2026 International Women's Day Celebration" },
+  { src: g7, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
+  { src: g8, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
+  { src: g9, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
+  { src: g10, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
   { src: n1, caption: "Award for Philanthropy — Barrister Judith Agu Esq." },
   { src: n2, caption: "National Conference & Presentation of Awards — Abeokuta" },
-  { src: n3, caption: "Plaque presentation at the 2026 IWD celebration" },
-  { src: n4, caption: "Supporters standing with the foundation" },
-  { src: n5, caption: "Recognising a woman of impact" },
+  { src: n3, caption: "2026 International Women's Day Celebration" },
+  { src: n4, caption: "2026 International Women's Day Celebration" },
+  { src: n5, caption: "2026 International Women's Day Celebration" },
   { src: n6, caption: "Honouring Mrs. Titi Akinlawon, SAN" },
-  { src: prayer1, caption: "Pictures taken after women's prayer meeting" },
-  { src: prayer2, caption: "Jewel in Christ team — monthly prayer fellowship" },
-  { src: prayer3, caption: "Women's ministry mentorship session" },
+  { src: prayer1, caption: "Women's Monthly Prayer Meeting" },
+  { src: prayer2, caption: "Women's Monthly Prayer Meeting" },
+  { src: prayer3, caption: "Women's Monthly Prayer Meeting" },
   { src: snacks, caption: "Trying out snacks after a skills acquisition program on baking" },
 ];
 
@@ -81,6 +82,18 @@ const Gallery = () => (
           />
           <figcaption className="absolute inset-x-0 top-0 p-4 bg-gradient-to-b from-primary/95 via-primary/60 to-transparent text-primary-foreground text-sm">
             Highlights from our recent outreach
+          </figcaption>
+        </figure>
+        <figure className="group relative overflow-hidden rounded-3xl shadow-card break-inside-avoid">
+          <video
+            src={juvenileVideoAsset.url}
+            className="w-full h-auto object-cover"
+            controls
+            playsInline
+            preload="metadata"
+          />
+          <figcaption className="absolute inset-x-0 top-0 p-4 bg-gradient-to-b from-primary/95 via-primary/60 to-transparent text-primary-foreground text-sm">
+            Visit to Juvenile Correctional Home, Asero, Abeokuta
           </figcaption>
         </figure>
         {photos.map((p, i) => (

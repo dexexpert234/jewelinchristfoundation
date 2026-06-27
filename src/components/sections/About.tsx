@@ -12,6 +12,9 @@ const About = () => (
         <p className="text-muted-foreground leading-relaxed">
           Jewel in Christ Foundation is a faith-driven NGO advancing economic empowerment, social justice, and community transformation. Rooted in compassion, we walk with women and the marginalized to build dignified, sustainable futures.
         </p>
+        <Button asChild variant="royal" size="lg" className="mt-8">
+          <Link to="/our-story">Read More <ArrowRight className="h-4 w-4" /></Link>
+        </Button>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-20">
@@ -67,7 +70,7 @@ const About = () => (
         <p className="relative text-accent text-xs uppercase tracking-[0.4em] mb-5">Our Motto</p>
         <h3 className="relative font-display text-3xl md:text-5xl leading-tight">
           Empowering People. <br className="hidden md:block" />
-          <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Strengthening Families.</em> <br className="hidden md:block" />
+          <em className="not-italic text-black">Strengthening Families.</em> <br className="hidden md:block" />
           Transforming Communities.
         </h3>
       </div>
