@@ -54,7 +54,7 @@ const Contact = () => {
             <div className="rounded-3xl overflow-hidden shadow-card border border-border h-64">
               <iframe
                 title="Jewel in Christ Foundation location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=7.45%2C6.40%2C7.55%2C6.50&layer=mapnik"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=7.40%2C9.00%2C7.60%2C9.15&layer=mapnik&marker=9.0765%2C7.3986"
                 className="w-full h-full"
                 loading="lazy"
               />

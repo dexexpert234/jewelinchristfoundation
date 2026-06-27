@@ -71,7 +71,7 @@ const FounderPage = () => (
         <div className="reveal">
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Meet Our Founder</p>
           <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-6">
-            Barrister <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Judith Ngozi Agu</em>
+            Barrister <em className="not-italic text-black">Judith Ngozi Agu</em>
           </h1>
           <p className="text-lg text-primary-foreground/90 mb-6 max-w-xl">
             A Lawyer. A Humanitarian. A Mentor. A Woman Dedicated to Transforming Lives Through Compassion, Leadership, and Service.
@@ -291,7 +291,7 @@ const FounderPage = () => (
     <section className="py-24 gradient-royal text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 opacity-15" style={{ backgroundImage: "radial-gradient(circle at 50% 50%, hsl(var(--accent)) 0%, transparent 60%)" }} />
       <div className="container relative z-10 text-center max-w-3xl reveal">
-        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-6">Together We Can <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Transform More Lives</em></h2>
+        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-6">Together We Can <em className="not-italic text-black">Transform More Lives</em></h2>
         <p className="text-primary-foreground/90 text-lg mb-10">
           Every act of kindness creates an opportunity for hope. Whether through volunteering, donating, partnering, or simply sharing our mission, you become part of a movement that empowers people, strengthens families, and transforms communities.
         </p>

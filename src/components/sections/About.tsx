@@ -67,7 +67,7 @@ const About = () => (
         <p className="relative text-accent text-xs uppercase tracking-[0.4em] mb-5">Our Motto</p>
         <h3 className="relative font-display text-3xl md:text-5xl leading-tight">
           Empowering People. <br className="hidden md:block" />
-          <em className="not-italic bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Strengthening Families.</em> <br className="hidden md:block" />
+          <em className="not-italic text-black">Strengthening Families.</em> <br className="hidden md:block" />
           Transforming Communities.
         </h3>
       </div>
