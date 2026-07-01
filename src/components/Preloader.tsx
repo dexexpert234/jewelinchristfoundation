@@ -11,8 +11,9 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
   const [phase, setPhase] = useState(0); // 0 logo, 1 name, 2 mission, 3 final
   const [progress, setProgress] = useState(0);
   const [exit, setExit] = useState(false);
-  const reduced = typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-  const duration = reduced ? 1500 : 10000;
+  // Preloader duration is fixed at exactly 10 seconds on every device.
+  const duration = 10000;
+  const reduced = false;
 
   useEffect(() => {
     if (reduced) {
@@ -45,7 +46,7 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
   return (
     <div
       aria-hidden={exit}
-      className={`fixed inset-0 z-[100] flex items-center justify-center gradient-preloader transition-opacity duration-700 ${exit ? "opacity-0 pointer-events-none" : "opacity-100"}`}
+      className={`fixed inset-0 z-[100] flex items-center justify-center gradient-preloader transition-opacity duration-700 overflow-hidden ${exit ? "opacity-0 pointer-events-none" : "opacity-100"}`}
       role="status"
       aria-label="Loading Jewel in Christ Foundation"
     >
@@ -78,7 +79,10 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
       {/* center content */}
       <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 max-w-2xl w-full">
         {/* progress ring + logo */}
-        <div className="relative h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 mb-6 sm:mb-10">
+        <div
+          className="relative mb-6 sm:mb-10"
+          style={{ width: "clamp(6rem, 28vw, 11rem)", height: "clamp(6rem, 28vw, 11rem)" }}
+        >
           <svg className="absolute inset-0 -rotate-90" viewBox="0 0 100 100">
             <defs>
               <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
@@ -94,28 +98,28 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
               style={{ transition: "stroke-dashoffset 120ms linear", filter: "drop-shadow(0 0 8px hsl(22 96% 53% / 0.7))" }}
             />
           </svg>
-          <div className="absolute inset-2 sm:inset-3 rounded-full bg-[hsl(0_0%_100%/0.04)] backdrop-blur-sm flex items-center justify-center animate-pulse-glow">
-            <img src={logo} alt="Jewel in Christ Foundation" className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 object-contain" />
+          <div className="absolute inset-[8%] rounded-full bg-[hsl(0_0%_100%/0.04)] backdrop-blur-sm flex items-center justify-center animate-pulse-glow">
+            <img src={logo} alt="Jewel in Christ Foundation" className="w-[65%] h-[65%] object-contain" />
           </div>
         </div>
 
         {/* phase content */}
-        <div className="min-h-[100px] sm:min-h-[120px] flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full" style={{ minHeight: "clamp(90px, 20vh, 140px)" }}>
           {phase <= 1 && (
             <div key="name" className="animate-page-fade-in">
-              <h1 className="font-luxe text-2xl sm:text-4xl md:text-5xl font-semibold text-white tracking-wide">
+              <h1 className="font-luxe font-semibold text-white tracking-wide" style={{ fontSize: "clamp(1.4rem, 6vw, 3rem)" }}>
                 Jewel in Christ <span className="bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent italic">Foundation</span>
               </h1>
-              <p className="mt-3 text-[10px] sm:text-sm uppercase tracking-[0.35em] sm:tracking-[0.5em] text-amber-200/80">A movement of restoration</p>
+              <p className="mt-3 uppercase text-amber-200/80" style={{ fontSize: "clamp(0.6rem, 1.6vw, 0.875rem)", letterSpacing: "clamp(0.2em, 1vw, 0.5em)" }}>A movement of restoration</p>
             </div>
           )}
           {phase === 2 && (
-            <div key="mission" className="space-y-2 px-2">
+            <div key="mission" className="space-y-2 px-2 w-full">
               {lines.map((line, i) => (
                 <p
                   key={line}
-                  className="font-luxe text-lg sm:text-2xl md:text-3xl text-white animate-page-fade-in"
-                  style={{ animationDelay: `${i * 220}ms` }}
+                  className="font-luxe text-white animate-page-fade-in"
+                  style={{ animationDelay: `${i * 220}ms`, fontSize: "clamp(1rem, 4.2vw, 1.875rem)" }}
                 >
                   {line}
                 </p>
@@ -124,14 +128,14 @@ const Preloader = ({ onDone }: { onDone: () => void }) => {
           )}
           {phase === 3 && (
             <div key="final" className="animate-page-fade-in px-2">
-              <p className="font-luxe text-xl sm:text-3xl md:text-4xl text-white">
+              <p className="font-luxe text-white" style={{ fontSize: "clamp(1.15rem, 5vw, 2.25rem)" }}>
                 <span className="bg-gradient-to-r from-amber-300 via-orange-400 to-amber-500 bg-clip-text text-transparent">Faith. Skills. Advocacy. Transformation.</span>
               </p>
             </div>
           )}
         </div>
 
-        <p className="mt-6 sm:mt-10 text-[9px] sm:text-xs uppercase tracking-[0.4em] sm:tracking-[0.6em] text-white/60">
+        <p className="mt-6 sm:mt-10 uppercase text-white/60" style={{ fontSize: "clamp(0.55rem, 1.4vw, 0.75rem)", letterSpacing: "clamp(0.25em, 1.2vw, 0.6em)" }}>
           {Math.round(progress * 100)}% — Preparing your experience
         </p>
       </div>
