@@ -3,6 +3,7 @@ import Seo from "@/components/Seo";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
+import AreasOfImpact from "@/components/sections/AreasOfImpact";
 import Blog from "@/components/sections/Blog";
 import WhyItMatters from "@/components/sections/WhyItMatters";
 import WomensMinistry from "@/components/sections/WomensMinistry";
@@ -20,6 +21,7 @@ const Index = () => {
     <Hero />
     <Stats />
     <About />
+    <AreasOfImpact />
     <WhyItMatters />
     <WomensMinistry />
     <Blog />
