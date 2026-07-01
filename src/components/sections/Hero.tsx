@@ -24,10 +24,10 @@ const Hero = () => {
           loading="eager"
           decoding="async"
         />
-        {/* Strong dark overlay for busy photo readability */}
-        <div className="absolute inset-0 bg-black/60" />
+        {/* Light overlay so faces in the photo remain visible */}
+        <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero-overlay)" }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-black/20 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-black/20" />
       </div>
 
       <div className="relative z-10 container h-full flex items-center">
