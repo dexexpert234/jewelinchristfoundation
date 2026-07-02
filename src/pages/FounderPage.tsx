@@ -96,7 +96,6 @@ const FounderPage = () => (
     <section className="py-24 bg-background">
       <div className="container max-w-4xl">
         <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4 text-center reveal">Biography</p>
-        <h2 className="font-display text-4xl md:text-5xl text-primary text-center mb-10 reveal">Who is <em className="not-italic text-gradient-royal font-semibold">Barrister Judith Ngozi Agu?</em></h2>
         <div className="space-y-5 text-muted-foreground leading-relaxed text-lg reveal">
           <p>Barrister Judith Ngozi Agu is an accomplished legal practitioner, public servant, humanitarian, mentor, author, and visionary leader with over twenty-seven years of professional experience spanning banking, corporate law, private legal practice, and public service.</p>
           <p>Throughout her career, she has consistently demonstrated a passion for justice, ethical leadership, community development, and the empowerment of vulnerable individuals.</p>

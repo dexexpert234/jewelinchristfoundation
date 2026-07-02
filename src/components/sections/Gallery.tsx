@@ -26,6 +26,15 @@ import prayer1 from "@/assets/gallery-prayer-1.jpg";
 import prayer2 from "@/assets/gallery-prayer-2.jpg";
 import prayer3 from "@/assets/gallery-prayer-3.jpg";
 import snacks from "@/assets/gallery-snacks.jpg";
+import c1 from "@/assets/gallery-christmas-1.jpg.asset.json";
+import c2 from "@/assets/gallery-christmas-2.jpg.asset.json";
+import c3 from "@/assets/gallery-christmas-3.jpg.asset.json";
+import c4 from "@/assets/gallery-christmas-4.jpg.asset.json";
+import c5 from "@/assets/gallery-christmas-5.jpg.asset.json";
+import c6 from "@/assets/gallery-christmas-6.jpg.asset.json";
+import c7 from "@/assets/gallery-christmas-7.jpg.asset.json";
+import c8 from "@/assets/gallery-christmas-8.jpg.asset.json";
+import c9 from "@/assets/gallery-christmas-9.jpg.asset.json";
 import videoAsset from "@/assets/gallery-video.mp4.asset.json";
 import juvenileVideoAsset from "@/assets/gallery-juvenile-asero.mp4.asset.json";
 
@@ -58,6 +67,15 @@ const photos = [
   { src: prayer2, caption: "Women's Monthly Prayer Meeting" },
   { src: prayer3, caption: "Women's Monthly Prayer Meeting" },
   { src: snacks, caption: "Trying out snacks after a skills acquisition program on baking" },
+  { src: c1.url, caption: "Christmas Outreach — School Visit" },
+  { src: c2.url, caption: "Christmas Outreach — School Visit" },
+  { src: c3.url, caption: "Christmas Outreach — School Visit" },
+  { src: c4.url, caption: "Christmas Outreach — School Visit" },
+  { src: c5.url, caption: "Christmas Outreach — School Visit" },
+  { src: c6.url, caption: "Christmas Outreach — School Visit" },
+  { src: c7.url, caption: "Christmas Outreach — School Visit" },
+  { src: c8.url, caption: "Christmas Outreach — School Visit" },
+  { src: c9.url, caption: "Christmas Outreach — School Visit" },
 ];
 
 const Gallery = () => (
