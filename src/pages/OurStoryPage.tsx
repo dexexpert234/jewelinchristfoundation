@@ -18,9 +18,20 @@ const founders = [
   "Anuli Okpala",
   "Olohi Efekemo",
   "Uzoma Onodi",
-  "Chinwe Ezuma",
+  "Chinwe Ezumah",
   "Beta Eboigbe",
   "Bene Ugwu",
+];
+
+const abeokutaPioneers = [
+  "Elizabeth Sawyer",
+  "Emmanuella Ofili",
+  "Aderonke Adegbite",
+  "Ada Iyeh",
+  "Taiwo Afolabi",
+  "Cynthia Nyisagba",
+  "Tope Etim",
+  "Esther Taiwo",
 ];
 
 const initials = (name: string) =>
@@ -86,6 +97,7 @@ const OurStoryPage = () => (
             <p>At that moment, Barrister Judith Agu did not have enough resources to establish a business for her. Because she had just returned from a long day, she simply asked the woman to visit her office the following Monday so they could discuss possible assistance.</p>
             <p>Before leaving, she opened her purse. She found only ₦5,000. Without hesitation, she gave the woman ₦3,000 as a small token to support her immediate needs.</p>
             <p className="text-primary font-medium">At the time, she believed it was simply an act of kindness. She had no idea it would become the beginning of something extraordinary.</p>
+            <p>It was when Barrister Judith later relocated to Abeokuta that she brought other women on board. During those early meetings in Abeokuta, the story around Jewel in Christ truly began to take shape.</p>
           </div>
         </div>
       </div>
@@ -154,6 +166,27 @@ const OurStoryPage = () => (
         <p className="max-w-3xl mx-auto text-center text-muted-foreground mt-12 leading-relaxed reveal">
           The founding meetings were held in Barrister Judith Agu's home, where every conversation centered around one purpose: creating opportunities that would restore hope, dignity, and purpose to people in need.
         </p>
+
+        <div className="mt-20">
+          <div className="text-center max-w-2xl mx-auto mb-10 reveal">
+            <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Abeokuta Chapter</p>
+            <h3 className="font-display text-3xl md:text-4xl text-primary mb-4">Abeokuta Pioneer Partners</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              When Barrister Judith relocated to Abeokuta, these remarkable women stood alongside her from the very beginning — shaping the early meetings where the vision of Jewel in Christ took root.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+            {abeokutaPioneers.map((name) => (
+              <div key={name} className="reveal bg-card rounded-2xl p-6 border border-border shadow-card hover:shadow-elegant transition-smooth text-center">
+                <div className="h-16 w-16 mx-auto rounded-full gradient-royal flex items-center justify-center mb-4">
+                  <span className="font-display text-xl text-accent">{initials(name)}</span>
+                </div>
+                <p className="font-display text-lg text-primary leading-tight">{name}</p>
+                <p className="text-xs text-muted-foreground mt-1">Abeokuta Pioneer Partner</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
 

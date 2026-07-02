@@ -62,7 +62,7 @@ const advisoryBoard: Member[] = [
 const team: Member[] = [
   {
     name: "Nkechi Ahurah",
-    role: "Head, Programs, Research & Funding",
+    role: "Director, Programs, Research & Funding",
     image: nkechi,
     bio: "Leads program design, research, and resource mobilisation — translating mission into measurable community impact. Brings strategic insight, operational rigour, and a deep heart for women's empowerment to every project she oversees.",
   },

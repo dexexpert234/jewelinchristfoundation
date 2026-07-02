@@ -46,7 +46,7 @@ const AreasOfImpact = () => (
         <p className="text-primary text-xs uppercase tracking-[0.4em] mb-4">Our Mission at a Glance</p>
         <h2 className="font-display text-4xl md:text-5xl mb-6">Our Areas of Impact</h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          At Jewels-in-Christ Foundation, every initiative we undertake is guided by one mission:
+          At Jewel in Christ Foundation, every initiative we undertake is guided by one mission:
         </p>
         <p className="font-luxe text-xl md:text-2xl text-foreground italic mb-4">
           Empowering People. Strengthening Families. Transforming Communities.
