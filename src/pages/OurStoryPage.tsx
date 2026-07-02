@@ -97,6 +97,7 @@ const OurStoryPage = () => (
             <p>At that moment, Barrister Judith Agu did not have enough resources to establish a business for her. Because she had just returned from a long day, she simply asked the woman to visit her office the following Monday so they could discuss possible assistance.</p>
             <p>Before leaving, she opened her purse. She found only ₦5,000. Without hesitation, she gave the woman ₦3,000 as a small token to support her immediate needs.</p>
             <p className="text-primary font-medium">At the time, she believed it was simply an act of kindness. She had no idea it would become the beginning of something extraordinary.</p>
+            <p>It was when Barrister Judith later relocated to Abeokuta that she brought other women on board. During those early meetings in Abeokuta, the story around Jewel in Christ truly began to take shape.</p>
           </div>
         </div>
       </div>
