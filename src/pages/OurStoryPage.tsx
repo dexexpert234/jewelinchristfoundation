@@ -18,9 +18,20 @@ const founders = [
   "Anuli Okpala",
   "Olohi Efekemo",
   "Uzoma Onodi",
-  "Chinwe Ezuma",
+  "Chinwe Ezumah",
   "Beta Eboigbe",
   "Bene Ugwu",
+];
+
+const abeokutaPioneers = [
+  "Elizabeth Sawyer",
+  "Emmanuella Ofili",
+  "Aderonke Adegbite",
+  "Ada Iyeh",
+  "Taiwo Afolabi",
+  "Cynthia Nyisagba",
+  "Tope Etim",
+  "Esther Taiwo",
 ];
 
 const initials = (name: string) =>
