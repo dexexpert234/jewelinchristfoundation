@@ -27,7 +27,7 @@ const WomensMinistry = () => (
       <div className="text-center max-w-2xl mx-auto mb-14 reveal">
         <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">A Women's Ministry</p>
         <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">
-          Jewels in <em className="text-gradient-royal not-italic font-semibold">Christ</em>
+          Jewel in <em className="text-gradient-royal not-italic font-semibold">Christ</em>
         </h2>
         <p className="text-muted-foreground">A sisterhood of married women, growing together in faith, purpose and service.</p>
       </div>
