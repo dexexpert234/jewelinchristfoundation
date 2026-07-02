@@ -12,7 +12,7 @@ const timeline = [
   { year: "27+ Years", title: "Legal Practitioner", desc: "Banking, corporate law, private legal practice, and public service." },
   { year: "Director", title: "Legal Services", desc: "Director of Legal Services & Secretary to the Board — Ogun-Oshun River Basin Development Authority." },
   { year: "Head", title: "Public-Private Partnership Unit", desc: "Leading PPP initiatives and ethical governance reforms." },
-  { year: "Today", title: "Humanitarian & Mentor", desc: "Founder of Jewels-in-Christ Foundation, Peace Ambassador and Lay Missionary." },
+  { year: "Today", title: "Humanitarian & Mentor", desc: "Founder of Jewel in Christ Foundation, Peace Ambassador and Lay Missionary." },
 ];
 
 const education = [
@@ -60,7 +60,7 @@ const FounderPage = () => (
   <SiteLayout>
     <Seo
       title="About the Founder — Barrister Judith Ngozi Agu"
-      description="Meet Barrister Judith Ngozi Agu — lawyer, humanitarian, mentor and visionary founder of Jewels-in-Christ Foundation."
+      description="Meet Barrister Judith Ngozi Agu — lawyer, humanitarian, mentor and visionary founder of Jewel in Christ Foundation."
       path="/founder"
     />
 
@@ -163,7 +163,7 @@ const FounderPage = () => (
           "Leadership is selfless service with a heart of love."
         </p>
         <p className="text-primary-foreground/85 text-lg leading-relaxed">
-          This philosophy has guided Barrister Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewels-in-Christ Foundation.
+          This philosophy has guided Barrister Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewel in Christ Foundation.
         </p>
       </div>
     </section>
@@ -296,7 +296,7 @@ const FounderPage = () => (
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button asChild variant="hero" size="lg" className="h-14 px-8">
-            <a href={buildMailto("Volunteer Application — Jewels in Christ Foundation")} target="_blank" rel="noopener noreferrer"><Users className="h-5 w-5" /> Become a Volunteer</a>
+            <a href={buildMailto("Volunteer Application — Jewel in Christ Foundation")} target="_blank" rel="noopener noreferrer"><Users className="h-5 w-5" /> Become a Volunteer</a>
           </Button>
           <Button asChild variant="outlineGold" size="lg" className="h-14 px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-background">
             <Link to="/donate"><Heart className="h-5 w-5" /> Donate Today</Link>
