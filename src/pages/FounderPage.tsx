@@ -163,7 +163,7 @@ const FounderPage = () => (
           "Leadership is selfless service with a heart of love."
         </p>
         <p className="text-primary-foreground/85 text-lg leading-relaxed">
-          This philosophy has guided Barrister Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewel in Christ Foundation.
+          This philosophy has guided Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewel in Christ Foundation.
         </p>
       </div>
     </section>
@@ -200,7 +200,7 @@ const FounderPage = () => (
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">Serving Beyond the <em className="not-italic text-gradient-royal font-semibold">Courtroom</em></h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>Beyond her legal profession, Barrister Judith Agu has devoted herself to humanitarian service, women empowerment, girl-child education, conflict resolution, protection of vulnerable persons, and family development.</p>
+            <p>Beyond her legal profession, Judith Agu has devoted herself to humanitarian service, women empowerment, girl-child education, conflict resolution, protection of vulnerable persons, and family development.</p>
             <p>She serves as a Peace Ambassador and Lay Missionary, believing that lasting transformation begins when people are empowered with opportunities, guidance, and hope.</p>
             <p>Her service extends beyond institutions into communities where she continues to inspire positive social change.</p>
           </div>

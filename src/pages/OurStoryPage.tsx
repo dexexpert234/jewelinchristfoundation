@@ -94,7 +94,7 @@ const OurStoryPage = () => (
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>One day in 2010, after returning home from an event, Barrister Judith Ngozi Agu was on her way to visit a friend when she met a woman in a neighborhood.</p>
             <p>The woman explained that she was tired of staying at home without work. She desperately wanted to start a small business so she could support herself and her family, but she had no capital to begin.</p>
-            <p>At that moment, Barrister Judith Agu did not have enough resources to establish a business for her. Because she had just returned from a long day, she simply asked the woman to visit her office the following Monday so they could discuss possible assistance.</p>
+            <p>At that moment, Judith Agu did not have enough resources to establish a business for her. Because she had just returned from a long day, she simply asked the woman to visit her office the following Monday so they could discuss possible assistance.</p>
             <p>Before leaving, she opened her purse. She found only ₦5,000. Without hesitation, she gave the woman ₦3,000 as a small token to support her immediate needs.</p>
             <p className="text-primary font-medium">At the time, she believed it was simply an act of kindness. She had no idea it would become the beginning of something extraordinary.</p>
             <p>It was when Barrister Judith later relocated to Abeokuta that she brought other women on board. During those early meetings in Abeokuta, the story around Jewel in Christ truly began to take shape.</p>
@@ -110,10 +110,10 @@ const OurStoryPage = () => (
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Chapter Two</p>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">A Life Changed</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>When Monday arrived, Barrister Judith Agu waited for the woman to visit her office. She never came.</p>
-            <p>Some time later, while passing through the same neighborhood again, Barrister Judith Agu met the woman's daughter. Curious, she asked why her mother never came to the office.</p>
-            <p>The young girl smiled and explained something that completely changed Barrister Judith Agu's perspective. Her mother had used the ₦3,000 to buy ingredients for akara (bean cake). She began selling akara in the local market. From that small beginning, she started earning an income and was able to support her family.</p>
-            <p>Barrister Judith Agu was deeply moved. What she believed was merely a small gift had become someone else's opportunity.</p>
+            <p>When Monday arrived, Judith Agu waited for the woman to visit her office. She never came.</p>
+            <p>Some time later, while passing through the same neighborhood again, Judith Agu met the woman's daughter. Curious, she asked why her mother never came to the office.</p>
+            <p>The young girl smiled and explained something that completely changed Judith Agu's perspective. Her mother had used the ₦3,000 to buy ingredients for akara (bean cake). She began selling akara in the local market. From that small beginning, she started earning an income and was able to support her family.</p>
+            <p>Judith Agu was deeply moved. What she believed was merely a small gift had become someone else's opportunity.</p>
           </div>
           <blockquote className="mt-8 p-6 md:p-8 rounded-2xl bg-card border-l-4 border-accent shadow-card">
             <Quote className="h-6 w-6 text-accent mb-3" />
@@ -134,7 +134,7 @@ const OurStoryPage = () => (
         <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Chapter Three</p>
         <h2 className="font-display text-4xl md:text-5xl text-primary mb-8">From Compassion to a Calling</h2>
         <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
-          <p>That experience stayed in Barrister Judith Agu's heart. Helping people had always been part of who she was.</p>
+          <p>That experience stayed in Judith Agu's heart. Helping people had always been part of who she was.</p>
           <p>She had long carried a passion for empowering women, supporting struggling families, mentoring young people, and restoring hope to vulnerable members of society.</p>
           <p>After reflecting on what had happened, she realized that if one small act of kindness could transform one life, then a coordinated effort could transform many lives.</p>
           <p className="text-primary font-medium">That realization became the seed that would eventually grow into Jewel in Christ Foundation.</p>
@@ -149,7 +149,7 @@ const OurStoryPage = () => (
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Chapter Four</p>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">Building the Vision Together</h2>
           <p className="text-muted-foreground leading-relaxed">
-            No great vision grows alone. Barrister Judith Agu shared her dream with trusted friends who immediately believed in the mission and chose to become part of something bigger than themselves. Together they contributed their ideas, encouragement, resources, and commitment to establishing what would become Jewel in Christ Foundation.
+            No great vision grows alone. Judith Agu shared her dream with trusted friends who immediately believed in the mission and chose to become part of something bigger than themselves. Together they contributed their ideas, encouragement, resources, and commitment to establishing what would become Jewel in Christ Foundation.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -164,7 +164,7 @@ const OurStoryPage = () => (
           ))}
         </div>
         <p className="max-w-3xl mx-auto text-center text-muted-foreground mt-12 leading-relaxed reveal">
-          The founding meetings were held in Barrister Judith Agu's home, where every conversation centered around one purpose: creating opportunities that would restore hope, dignity, and purpose to people in need.
+          The founding meetings were held in Judith Agu's home, where every conversation centered around one purpose: creating opportunities that would restore hope, dignity, and purpose to people in need.
         </p>
 
         <div className="mt-20">
@@ -195,7 +195,7 @@ const OurStoryPage = () => (
       <div className="container text-center max-w-2xl mx-auto reveal">
         <Calendar className="h-10 w-10 mx-auto text-accent mb-5" />
         <p className="text-accent text-xs uppercase tracking-[0.5em] mb-4">A Milestone in History</p>
-        <h2 className="font-display text-5xl md:text-6xl mb-3">October 8, 2010</h2>
+        <h2 className="font-display text-5xl md:text-6xl mb-3">October 30, 2010</h2>
         <p className="text-xl text-primary-foreground/90 italic mb-8">The Beginning of the Journey</p>
         <div className="space-y-4 text-primary-foreground/90 leading-relaxed">
           <p>With the support of committed friends and the participation of guest speaker Mr. Efekemo Ode Andrew Eyeoyibo, the foundation officially began its journey.</p>
@@ -213,7 +213,7 @@ const OurStoryPage = () => (
         </div>
         <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
           <p>During one of the early planning meetings, the team discussed possible names for the organization. One suggestion quickly gained everyone's approval: <span className="text-primary font-semibold">"Precious Jewel Foundation."</span></p>
-          <p>However, while driving home after the meeting, Barrister Judith Agu noticed a billboard belonging to another organization already using a similar name. The following day she shared the discovery with the team. Everyone agreed they needed a unique identity.</p>
+          <p>However, while driving home after the meeting, Judith Agu noticed a billboard belonging to another organization already using a similar name. The following day she shared the discovery with the team. Everyone agreed they needed a unique identity.</p>
           <p>Since they all believed that every person is precious in God's sight and that every life is a jewel created by Him, they decided to keep the word "Jewel."</p>
           <p>Another suggestion soon emerged. <span className="text-primary font-semibold">Jewel in Christ Foundation.</span></p>
           <p>The name immediately resonated with everyone in the room. It perfectly reflected the foundation's Christian values and its belief that every human being possesses God-given worth, dignity, purpose, and potential.</p>

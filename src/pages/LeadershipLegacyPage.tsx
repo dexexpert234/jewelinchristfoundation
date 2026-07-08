@@ -92,7 +92,7 @@ const LeadershipLegacyPage = () => (
           "Leadership is selfless service with a heart of love."
         </p>
         <p className="text-muted-foreground leading-relaxed text-lg">
-          Everything Barrister Judith Agu has accomplished reflects one consistent belief: real leadership exists to serve others. This philosophy continues to shape every initiative, outreach program, and partnership undertaken by Jewel in Christ Foundation.
+          Everything Judith Agu has accomplished reflects one consistent belief: real leadership exists to serve others. This philosophy continues to shape every initiative, outreach program, and partnership undertaken by Jewel in Christ Foundation.
         </p>
       </div>
     </section>
