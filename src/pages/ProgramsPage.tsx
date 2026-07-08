@@ -118,7 +118,7 @@ const ProgramsPage = () => {
               <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Featured Publication</p>
               <h3 className="font-display text-3xl md:text-4xl text-primary mb-6">30 Vital Principles for Success</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Written by Barrister Judith Ngozi Agu, this practical and inspiring book encourages readers to discover their God-given purpose, embrace personal growth, cultivate leadership, and pursue excellence in every area of life.
+                Written by Judith Ngozi Agu, this practical and inspiring book encourages readers to discover their God-given purpose, embrace personal growth, cultivate leadership, and pursue excellence in every area of life.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 The book reflects many of the same values that inspired the creation of Jewel in Christ Foundation.

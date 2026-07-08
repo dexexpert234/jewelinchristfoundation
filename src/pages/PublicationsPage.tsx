@@ -9,7 +9,7 @@ const PublicationsPage = () => (
   <SiteLayout>
     <Seo
       title="Publications | Jewel in Christ Foundation"
-      description="Books and writings by Barrister Judith Ngozi Agu — sharing wisdom that inspires purpose, leadership, and transformation."
+      description="Books and writings by Judith Ngozi Agu — sharing wisdom that inspires purpose, leadership, and transformation."
       path="/publications"
     />
     <PageHero
@@ -34,7 +34,7 @@ const PublicationsPage = () => (
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Featured Publication</p>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">30 Vital Principles for Success</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Written by Barrister Judith Ngozi Agu, this practical and inspiring book encourages readers to discover their God-given purpose, embrace personal growth, cultivate leadership, and pursue excellence in every area of life.
+            Written by Judith Ngozi Agu, this practical and inspiring book encourages readers to discover their God-given purpose, embrace personal growth, cultivate leadership, and pursue excellence in every area of life.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
             The book reflects many of the same values that inspired the creation of Jewel in Christ Foundation.

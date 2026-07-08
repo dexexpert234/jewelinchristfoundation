@@ -39,14 +39,14 @@ const LeadershipLegacyPage = () => (
     <PageHero
       eyebrow="A Life of Service"
       title="Leadership That Inspires Hope"
-      subtitle="For more than twenty-seven years, Barrister Judith Ngozi Agu has combined legal excellence, ethical leadership, and compassionate service to create opportunities that empower people, strengthen families, and transform communities."
+      subtitle="For more than twenty-seven years, Judith Ngozi Agu has combined legal excellence, ethical leadership, and compassionate service to create opportunities that empower people, strengthen families, and transform communities."
     />
 
     {/* Portrait + intro */}
     <section className="py-20 bg-background">
       <div className="container grid lg:grid-cols-5 gap-12 items-center">
         <div className="lg:col-span-2 reveal">
-          <img src={portrait} alt="Barrister Judith Ngozi Agu" className="rounded-3xl shadow-elegant w-full object-cover h-[520px]" loading="lazy" decoding="async" />
+          <img src={portrait} alt="Judith Ngozi Agu" className="rounded-3xl shadow-elegant w-full object-cover h-[520px]" loading="lazy" decoding="async" />
         </div>
         <div className="lg:col-span-3 reveal">
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Leadership at a Glance</p>
