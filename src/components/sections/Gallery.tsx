@@ -57,7 +57,7 @@ const photos = [
   { src: g8, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
   { src: g9, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
   { src: g10, caption: "Rural Women Empowerment — Food & Micro-Grant Support" },
-  { src: n1, caption: "Award for Philanthropy — Barrister Judith Agu Esq." },
+  { src: n1, caption: "Award for Philanthropy — Judith Agu Esq." },
   { src: n2, caption: "National Conference & Presentation of Awards — Abeokuta" },
   { src: n3, caption: "2026 International Women's Day Celebration" },
   { src: n4, caption: "2026 International Women's Day Celebration" },

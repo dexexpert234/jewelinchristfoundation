@@ -7,7 +7,6 @@ const slide = {
   image: heroImg,
   eyebrow: "Empowering Women",
   title: "Building Sustainable Futures",
-  desc: "Through skills training and entrepreneurship, we equip women to transform their lives and the world around them.",
 };
 
 const Hero = () => {
@@ -39,9 +38,6 @@ const Hero = () => {
             {slide.title.split(" ").slice(0, -2).join(" ")}{" "}
             <span className="italic font-bold" style={{ color: "#fff", textShadow: "0 4px 24px rgba(0,0,0,0.85), 0 2px 8px rgba(0,0,0,0.7)" }}>{slide.title.split(" ").slice(-2).join(" ")}</span>
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground font-medium mb-10 max-w-xl animate-fade-in-up" style={{ animationDelay: "0.3s", textShadow: "0 3px 16px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.7)" }}>
-            {slide.desc}
-          </p>
           <p className="font-luxe italic text-base md:text-lg text-amber-300 mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s", textShadow: "0 3px 16px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.7)" }}>
             Empowering People. Strengthening Families. Transforming Communities.
           </p>

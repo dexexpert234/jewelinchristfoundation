@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Award, BookOpen, GraduationCap, Heart, Users, Scale, Globe, Sparkles, Briefcase, Quote, Building2, Handshake, Feather, Home, Lightbulb, HeartHandshake, Cross, Shield } from "lucide-react";
 import leader from "@/assets/leader.jpg";
+import bookCover from "@/assets/book-30-principles.png.asset.json";
 import { buildMailto } from "@/lib/contact";
 
 const credentials = ["LLB", "BL", "LLM", "ACIS", "PhD Candidate"];
@@ -163,7 +164,7 @@ const FounderPage = () => (
           "Leadership is selfless service with a heart of love."
         </p>
         <p className="text-primary-foreground/85 text-lg leading-relaxed">
-          This philosophy has guided Barrister Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewel in Christ Foundation.
+          This philosophy has guided Judith Agu throughout her career in law, governance, humanitarian service, mentoring, and community development. It continues to shape every initiative of Jewel in Christ Foundation.
         </p>
       </div>
     </section>
@@ -200,7 +201,7 @@ const FounderPage = () => (
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">Serving Beyond the <em className="not-italic text-gradient-royal font-semibold">Courtroom</em></h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>Beyond her legal profession, Barrister Judith Agu has devoted herself to humanitarian service, women empowerment, girl-child education, conflict resolution, protection of vulnerable persons, and family development.</p>
+            <p>Beyond her legal profession, Judith Agu has devoted herself to humanitarian service, women empowerment, girl-child education, conflict resolution, protection of vulnerable persons, and family development.</p>
             <p>She serves as a Peace Ambassador and Lay Missionary, believing that lasting transformation begins when people are empowered with opportunities, guidance, and hope.</p>
             <p>Her service extends beyond institutions into communities where she continues to inspire positive social change.</p>
           </div>
@@ -268,12 +269,12 @@ const FounderPage = () => (
         </div>
         <div className="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
           <div className="reveal flex justify-center">
-            <div className="relative w-64 h-80 rounded-2xl gradient-royal shadow-elegant flex flex-col items-center justify-center text-primary-foreground p-6 text-center rotate-[-3deg] hover:rotate-0 transition-smooth">
-              <BookOpen className="h-10 w-10 text-accent mb-4" />
-              <div className="text-[10px] uppercase tracking-[0.3em] text-accent mb-2">Book</div>
-              <div className="font-display text-2xl leading-tight">30 Vital Principles for Success</div>
-              <div className="mt-4 text-xs text-primary-foreground/80">by Judith Ngozi Agu</div>
-            </div>
+            <img
+              src={bookCover.url}
+              alt="30 Vital Principles for Success by Judith Agu"
+              className="w-64 md:w-72 h-auto rounded-2xl shadow-elegant rotate-[-3deg] hover:rotate-0 transition-smooth"
+              loading="lazy"
+            />
           </div>
           <div className="reveal">
             <h3 className="font-display text-3xl text-primary mb-4">30 Vital Principles for Success</h3>
