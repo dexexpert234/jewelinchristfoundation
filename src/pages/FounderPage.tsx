@@ -268,12 +268,12 @@ const FounderPage = () => (
         </div>
         <div className="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
           <div className="reveal flex justify-center">
-            <div className="relative w-64 h-80 rounded-2xl gradient-royal shadow-elegant flex flex-col items-center justify-center text-primary-foreground p-6 text-center rotate-[-3deg] hover:rotate-0 transition-smooth">
-              <BookOpen className="h-10 w-10 text-accent mb-4" />
-              <div className="text-[10px] uppercase tracking-[0.3em] text-accent mb-2">Book</div>
-              <div className="font-display text-2xl leading-tight">30 Vital Principles for Success</div>
-              <div className="mt-4 text-xs text-primary-foreground/80">by Judith Ngozi Agu</div>
-            </div>
+            <img
+              src={bookCover.url}
+              alt="30 Vital Principles for Success by Judith Agu"
+              className="w-64 md:w-72 h-auto rounded-2xl shadow-elegant rotate-[-3deg] hover:rotate-0 transition-smooth"
+              loading="lazy"
+            />
           </div>
           <div className="reveal">
             <h3 className="font-display text-3xl text-primary mb-4">30 Vital Principles for Success</h3>
