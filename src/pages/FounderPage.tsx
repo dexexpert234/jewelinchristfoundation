@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Award, BookOpen, GraduationCap, Heart, Users, Scale, Globe, Sparkles, Briefcase, Quote, Building2, Handshake, Feather, Home, Lightbulb, HeartHandshake, Cross, Shield } from "lucide-react";
 import leader from "@/assets/leader.jpg";
+import bookCover from "@/assets/book-30-principles.png.asset.json";
 import { buildMailto } from "@/lib/contact";
 
 const credentials = ["LLB", "BL", "LLM", "ACIS", "PhD Candidate"];
