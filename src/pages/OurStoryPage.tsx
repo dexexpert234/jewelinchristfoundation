@@ -92,12 +92,12 @@ const OurStoryPage = () => (
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Chapter One</p>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-6">Where It All Began</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>One day in 2010, after returning home from an event, Barrister Judith Ngozi Agu was on her way to visit a friend when she met a woman in a neighborhood.</p>
+            <p>One day in 2010, after returning home from an event, Judith Ngozi Agu was on her way to visit a friend when she met a woman in a neighborhood.</p>
             <p>The woman explained that she was tired of staying at home without work. She desperately wanted to start a small business so she could support herself and her family, but she had no capital to begin.</p>
             <p>At that moment, Judith Agu did not have enough resources to establish a business for her. Because she had just returned from a long day, she simply asked the woman to visit her office the following Monday so they could discuss possible assistance.</p>
             <p>Before leaving, she opened her purse. She found only ₦5,000. Without hesitation, she gave the woman ₦3,000 as a small token to support her immediate needs.</p>
             <p className="text-primary font-medium">At the time, she believed it was simply an act of kindness. She had no idea it would become the beginning of something extraordinary.</p>
-            <p>It was when Barrister Judith later relocated to Abeokuta that she brought other women on board. During those early meetings in Abeokuta, the story around Jewel in Christ truly began to take shape.</p>
+            <p>It was when Judith later relocated to Abeokuta that she brought other women on board. During those early meetings in Abeokuta, the story around Jewel in Christ truly began to take shape.</p>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ const OurStoryPage = () => (
             <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Abeokuta Chapter</p>
             <h3 className="font-display text-3xl md:text-4xl text-primary mb-4">Abeokuta Pioneer Partners</h3>
             <p className="text-muted-foreground leading-relaxed">
-              When Barrister Judith relocated to Abeokuta, these remarkable women stood alongside her from the very beginning — shaping the early meetings where the vision of Jewel in Christ took root.
+              When Judith relocated to Abeokuta, these remarkable women stood alongside her from the very beginning — shaping the early meetings where the vision of Jewel in Christ took root.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">

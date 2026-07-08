@@ -60,8 +60,8 @@ const impactAreas = [
 const FounderPage = () => (
   <SiteLayout>
     <Seo
-      title="About the Founder — Barrister Judith Ngozi Agu"
-      description="Meet Barrister Judith Ngozi Agu — lawyer, humanitarian, mentor and visionary founder of Jewel in Christ Foundation."
+      title="About the Founder — Judith Ngozi Agu"
+      description="Meet Judith Ngozi Agu — lawyer, humanitarian, mentor and visionary founder of Jewel in Christ Foundation."
       path="/founder"
     />
 
@@ -72,7 +72,7 @@ const FounderPage = () => (
         <div className="reveal">
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Meet Our Founder</p>
           <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-6">
-            Barrister <em className="not-italic text-black">Judith Ngozi Agu</em>
+            Judith Ngozi Agu
           </h1>
           <p className="text-lg text-primary-foreground/90 mb-6 max-w-xl">
             A Lawyer. A Humanitarian. A Mentor. A Woman Dedicated to Transforming Lives Through Compassion, Leadership, and Service.
@@ -87,7 +87,7 @@ const FounderPage = () => (
         </div>
         <div className="reveal">
           <div className="relative rounded-3xl overflow-hidden shadow-elegant ring-1 ring-primary-foreground/20">
-            <img src={leader} alt="Barrister Judith Ngozi Agu" className="w-full h-[520px] object-cover" loading="eager" />
+            <img src={leader} alt="Judith Ngozi Agu" className="w-full h-[520px] object-cover" loading="eager" />
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ const FounderPage = () => (
       <div className="container max-w-4xl">
         <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4 text-center reveal">Biography</p>
         <div className="space-y-5 text-muted-foreground leading-relaxed text-lg reveal">
-          <p>Barrister Judith Ngozi Agu is an accomplished legal practitioner, public servant, humanitarian, mentor, author, and visionary leader with over twenty-seven years of professional experience spanning banking, corporate law, private legal practice, and public service.</p>
+          <p>Judith Ngozi Agu is an accomplished legal practitioner, public servant, humanitarian, mentor, author, and visionary leader with over twenty-seven years of professional experience spanning banking, corporate law, private legal practice, and public service.</p>
           <p>Throughout her career, she has consistently demonstrated a passion for justice, ethical leadership, community development, and the empowerment of vulnerable individuals.</p>
           <p>Her life's work reflects a rare combination of professional excellence, compassionate service, and unwavering faith in God. She believes that true leadership is measured not by position, but by the number of lives transformed through selfless service.</p>
           <p>Today, she continues to inspire individuals, families, communities, and organizations through her leadership and humanitarian efforts.</p>
@@ -229,7 +229,7 @@ const FounderPage = () => (
         <div className="text-center max-w-2xl mx-auto mb-12 reveal">
           <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Leadership & Legacy</p>
           <h2 className="font-display text-4xl md:text-5xl text-primary mb-4">A Servant Leader. A Builder of Hope.</h2>
-          <p className="text-muted-foreground leading-relaxed">For more than twenty-seven years, Barrister Judith Ngozi Agu has combined legal excellence, ethical leadership, and compassionate service to create opportunities that empower people, strengthen families, and transform communities.</p>
+          <p className="text-muted-foreground leading-relaxed">For more than twenty-seven years, Judith Ngozi Agu has combined legal excellence, ethical leadership, and compassionate service to create opportunities that empower people, strengthen families, and transform communities.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-14">
           {legacyStats.map((s) => (
