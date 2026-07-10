@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, Calendar, Clock, HandHeart, Heart, Sparkles, Users } from "lucide-react";
+import { ArrowRight, BookOpen, Calendar, Clock, HandHeart, Heart, Sparkles, ShoppingCart, Users } from "lucide-react";
 import SiteLayout from "@/components/layout/SiteLayout";
 import Seo from "@/components/Seo";
 import PageHero from "@/components/PageHero";
@@ -8,7 +8,8 @@ import Events from "@/components/sections/Events";
 import Donate from "@/components/sections/Donate";
 import { Button } from "@/components/ui/button";
 import { posts } from "@/data/posts";
-import { buildMailto } from "@/lib/contact";
+import { buildMailto, CONTACT_WHATSAPP } from "@/lib/contact";
+import bookCover from "@/assets/book-30-principles.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const ways = [
@@ -106,13 +107,12 @@ const ProgramsPage = () => {
           <SectionDivider id="publications-top" eyebrow="Thought Leadership" title="Publications" subtitle="Sharing wisdom that inspires purpose, leadership, and transformation." />
           <div className="grid lg:grid-cols-2 gap-12 items-center mt-10">
             <div className="reveal">
-              <div className="relative mx-auto w-[300px] md:w-[360px] aspect-[3/4] rounded-2xl shadow-elegant overflow-hidden gradient-royal flex flex-col items-center justify-center p-8 text-center text-primary-foreground border-4 border-accent/50">
-                <BookOpen className="h-10 w-10 text-accent mb-5" />
-                <p className="text-xs uppercase tracking-[0.4em] text-accent mb-3">A Book by Judith N. Agu</p>
-                <h3 className="font-display text-3xl md:text-4xl leading-tight mb-4">30 Vital Principles for Success</h3>
-                <div className="h-px w-16 bg-accent/60 mx-auto mb-4" />
-                <p className="text-sm italic text-primary-foreground/85">Discover · Grow · Lead</p>
-              </div>
+              <img
+                src={bookCover.url}
+                alt="30 Vital Principles for Success by Judith Agu"
+                className="mx-auto w-[300px] md:w-[360px] h-auto rounded-2xl shadow-elegant"
+                loading="lazy"
+              />
             </div>
             <div className="reveal">
               <p className="text-accent text-xs uppercase tracking-[0.4em] mb-4">Featured Publication</p>
@@ -124,7 +124,15 @@ const ProgramsPage = () => {
                 The book reflects many of the same values that inspired the creation of Jewel in Christ Foundation.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button variant="hero" size="lg" disabled className="opacity-90"><Clock className="h-4 w-4" /> Coming Soon</Button>
+                <Button asChild variant="hero" size="lg">
+                  <a
+                    href={`https://wa.me/${CONTACT_WHATSAPP}?text=${encodeURIComponent("Hello, I'd like to buy '30 Vital Principles for Success' by Judith Agu. Please share purchase details.")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ShoppingCart className="h-4 w-4" /> Buy Now
+                  </a>
+                </Button>
                 <Button asChild variant="royal" size="lg"><a href={buildMailto("Publication Inquiry — 30 Vital Principles for Success")} target="_blank" rel="noopener noreferrer">Learn More <ArrowRight className="h-4 w-4" /></a></Button>
               </div>
               <p className="text-sm text-accent italic mt-6">More inspiring resources will be added here as they become available.</p>

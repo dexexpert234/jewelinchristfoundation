@@ -67,8 +67,8 @@ const Footer = () => (
             <a href="mailto:info.jewelsfoundation@gmail.com" className="flex items-start gap-2 hover:text-primary-foreground transition-smooth">
               <Mail className="h-4 w-4 text-primary-foreground/80 mt-0.5" /> info.jewelsfoundation@gmail.com
             </a>
-            <a href="tel:+2348036430902" className="flex items-center gap-2 hover:text-primary-foreground transition-smooth">
-              <Phone className="h-4 w-4 text-primary-foreground/80" /> +234 803 643 0902
+            <a href="tel:+2348033203635" className="flex items-center gap-2 hover:text-primary-foreground transition-smooth">
+              <Phone className="h-4 w-4 text-primary-foreground/80" /> +234 803 320 3635
             </a>
             <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary-foreground/80" /> Abeokuta, Nigeria</div>
           </div>
