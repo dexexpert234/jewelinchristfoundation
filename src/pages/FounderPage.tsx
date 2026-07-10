@@ -7,12 +7,13 @@ import leader from "@/assets/leader.jpg";
 import bookCover from "@/assets/book-30-principles.png.asset.json";
 import { buildMailto } from "@/lib/contact";
 
-const credentials = ["LLB", "BL", "LLM", "ACIS", "PhD Candidate"];
+const credentials = ["LLB", "BL", "LLM", "ACIS"];
 
 const timeline = [
   { year: "27+ Years", title: "Legal Practitioner", desc: "Banking, corporate law, private legal practice, and public service." },
   { year: "Director", title: "Legal Services", desc: "Director of Legal Services & Secretary to the Board — Ogun-Oshun River Basin Development Authority." },
   { year: "Head", title: "Public-Private Partnership Unit", desc: "Leading PPP initiatives and ethical governance reforms." },
+  { year: "Board Member Secretary", title: "Expert In Board Practices", desc: "Serving as Board Member Secretary with deep expertise in corporate governance, board procedures, and ethical board practices across public and private institutions." },
   { year: "Today", title: "Humanitarian & Mentor", desc: "Founder of Jewel in Christ Foundation, Peace Ambassador and Lay Missionary." },
 ];
 

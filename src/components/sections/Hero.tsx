@@ -6,7 +6,6 @@ import heroImg from "@/assets/gallery-extra-7.jpg";
 const slide = {
   image: heroImg,
   eyebrow: "Empowering Women",
-  title: "Building Sustainable Futures",
 };
 
 const Hero = () => {
@@ -15,29 +14,24 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={slide.image}
-          alt={slide.title}
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          alt={slide.eyebrow}
+          className="absolute inset-0 w-full h-full object-cover object-[50%_20%] md:object-center brightness-125 md:brightness-110 contrast-105"
           width={1920}
           height={1080}
           fetchPriority="high"
           loading="eager"
           decoding="async"
         />
-        {/* Light overlay so faces in the photo remain visible */}
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="absolute inset-0" style={{ background: "var(--gradient-hero-overlay)" }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-black/20" />
+        {/* Very light overlay so faces stay clearly visible */}
+        <div className="absolute inset-0 bg-black/5" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 container h-full flex items-center">
+      <div className="relative z-10 container h-full flex items-end pb-16 md:pb-24">
         <div className="max-w-2xl text-primary-foreground">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/40 bg-black/50 backdrop-blur text-primary-foreground text-xs uppercase tracking-[0.3em] mb-6 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/40 bg-black/50 backdrop-blur text-primary-foreground text-xs uppercase tracking-[0.3em] mb-4 animate-fade-in-up">
             ✦ {slide.eyebrow}
           </div>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s", textShadow: "0 4px 24px rgba(0,0,0,0.85), 0 2px 8px rgba(0,0,0,0.7)" }}>
-            {slide.title.split(" ").slice(0, -2).join(" ")}{" "}
-            <span className="italic font-bold" style={{ color: "#fff", textShadow: "0 4px 24px rgba(0,0,0,0.85), 0 2px 8px rgba(0,0,0,0.7)" }}>{slide.title.split(" ").slice(-2).join(" ")}</span>
-          </h1>
           <p className="font-luxe italic text-base md:text-lg text-amber-300 mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s", textShadow: "0 3px 16px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.7)" }}>
             Empowering People. Strengthening Families. Transforming Communities.
           </p>

@@ -6,7 +6,7 @@ import { buildMailto } from "@/lib/contact";
 const events = [
   {
     title: "Care for the Elderly Program",
-    date: "2026-07-26T10:00:00",
+    date: "2026-07-25T10:00:00",
     venue: "Abeokuta, Ogun State",
     time: "10:00 AM",
     desc: "Honouring our elders with care, companionship, food, and practical support — a day dedicated to dignity in old age.",

@@ -35,7 +35,7 @@ import c6 from "@/assets/gallery-christmas-6.jpg.asset.json";
 import c7 from "@/assets/gallery-christmas-7.jpg.asset.json";
 import c8 from "@/assets/gallery-christmas-8.jpg.asset.json";
 import c9 from "@/assets/gallery-christmas-9.jpg.asset.json";
-import videoAsset from "@/assets/gallery-video.mp4.asset.json";
+import videoAsset from "@/assets/jic-video-1.mp4.asset.json";
 import juvenileVideoAsset from "@/assets/gallery-juvenile-asero.mp4.asset.json";
 
 const photos = [
