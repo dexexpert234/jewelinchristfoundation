@@ -129,7 +129,7 @@ const FounderPage = () => (
           ))}
         </div>
         <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {["Corporate Governance Professional","Chartered Secretary","Expert in Public-Private Partnerships","Advocate for Ethical Governance"].map((p) => (
+          {["Corporate Governance Professional","Chartered Secretary","Expert in Public-Private Partnerships","Advocate for Ethical Governance","Board Member Secretary"].map((p) => (
             <div key={p} className="p-4 rounded-xl bg-card border border-border text-sm text-primary text-center font-medium reveal">{p}</div>
           ))}
         </div>
