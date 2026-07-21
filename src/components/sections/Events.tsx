@@ -2,14 +2,25 @@ import { useEffect, useState } from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
+import careForElderly from "@/assets/care-for-elderly-2026.png.asset.json";
 
-const events = [
+type EventItem = {
+  title: string;
+  date: string;
+  venue: string;
+  time: string;
+  desc: string;
+  flyer?: string;
+};
+
+const events: EventItem[] = [
   {
     title: "Care for the Elderly Program",
-    date: "2026-07-25T10:00:00",
-    venue: "Abeokuta, Ogun State",
-    time: "10:00 AM",
-    desc: "Honouring our elders with care, companionship, food, and practical support — a day dedicated to dignity in old age.",
+    date: "2026-07-25T12:00:00",
+    venue: "Peter Olukayode Odetoyinbo Hall, St. Martins Chaplaincy, Eleweran, Abeokuta",
+    time: "12 Noon",
+    desc: "Honour. Love. Serve. Let's show love in action and make our elders feel valued, respected and cared for.",
+    flyer: careForElderly.url,
   },
   {
     title: "School Outreach — International Day of the Girl Child",
@@ -54,11 +65,21 @@ const useCountdown = (target: string) => {
   return t;
 };
 
-const EventCard = ({ e }: { e: typeof events[0] }) => {
+const EventCard = ({ e }: { e: EventItem }) => {
   const c = useCountdown(e.date);
   const d = new Date(e.date);
   return (
     <article className="group bg-card rounded-3xl overflow-hidden border border-border shadow-card hover:shadow-elegant transition-smooth">
+      {e.flyer && (
+        <div className="relative overflow-hidden bg-muted">
+          <img
+            src={e.flyer}
+            alt={`${e.title} flyer`}
+            className="w-full h-auto object-contain max-h-96"
+            loading="lazy"
+          />
+        </div>
+      )}
       <div className="gradient-royal text-primary-foreground p-6 flex items-center justify-between">
         <div>
           <div className="text-primary-foreground/80 text-[10px] uppercase tracking-[0.3em] mb-1">{d.toLocaleString("en", { month: "short" })}</div>
