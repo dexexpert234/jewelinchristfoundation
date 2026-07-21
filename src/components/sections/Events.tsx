@@ -65,7 +65,7 @@ const useCountdown = (target: string) => {
   return t;
 };
 
-const EventCard = ({ e }: { e: typeof events[0] }) => {
+const EventCard = ({ e }: { e: EventItem }) => {
   const c = useCountdown(e.date);
   const d = new Date(e.date);
   return (
