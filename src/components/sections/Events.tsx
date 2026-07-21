@@ -4,7 +4,16 @@ import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
 import careForElderly from "@/assets/care-for-elderly-2026.png.asset.json";
 
-const events = [
+type EventItem = {
+  title: string;
+  date: string;
+  venue: string;
+  time: string;
+  desc: string;
+  flyer?: string;
+};
+
+const events: EventItem[] = [
   {
     title: "Care for the Elderly Program",
     date: "2026-07-25T12:00:00",
