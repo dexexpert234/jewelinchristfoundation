@@ -15,18 +15,14 @@ jobs:
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          bun-version: latest
 
       - name: Install Dependencies
-        run: npm install
+        run: bun install
 
       - name: Build Website
-        run: npm run build
+        run: bun run build
 
       - name: Deploy to GiddyHost
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
