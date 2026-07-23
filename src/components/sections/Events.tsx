@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
-import careForElderly from "@/assets/care-for-elderly-2026.png.asset.json";
+import careForElderly from "@/assets/care-for-elderly-2026-v2.jpg.asset.json";
 
 type EventItem = {
   title: string;
