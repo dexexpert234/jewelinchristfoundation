@@ -9,7 +9,7 @@ import Donate from "@/components/sections/Donate";
 import { Button } from "@/components/ui/button";
 import { posts } from "@/data/posts";
 import { buildMailto, CONTACT_WHATSAPP } from "@/lib/contact";
-import bookCover from "@/assets/book-30-principles.png.asset.json";
+import bookCover from "@/assets/book-30-principles-v2.jpg";
 import { useReveal } from "@/hooks/use-reveal";
 
 const ways = [
@@ -108,7 +108,7 @@ const ProgramsPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mt-10">
             <div className="reveal">
               <img
-                src={bookCover.url}
+                src={bookCover}
                 alt="30 Vital Principles for Success by Judith Agu"
                 className="mx-auto w-[300px] md:w-[360px] h-auto rounded-2xl shadow-elegant"
                 loading="lazy"
