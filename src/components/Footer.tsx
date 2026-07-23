@@ -18,7 +18,7 @@ const Footer = () => (
             </div>
           </div>
           <p className="text-sm text-primary-foreground/90 leading-relaxed mb-5">
-            Empowering women, transforming families, and building thriving communities through faith, skills, and advocacy.
+            Empowering women, transforming families, and building thriving communities through faith, skills, and advocacy
           </p>
           <div className="flex gap-2">
             <a href="https://www.facebook.com/share/17Q7pPSwRC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="h-9 w-9 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground hover:text-background transition-smooth">
