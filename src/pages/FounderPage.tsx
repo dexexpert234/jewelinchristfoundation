@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Award, BookOpen, GraduationCap, Heart, Users, Scale, Globe, Sparkles, Briefcase, Quote, Building2, Handshake, Feather, Home, Lightbulb, HeartHandshake, Cross, Shield } from "lucide-react";
 import leader from "@/assets/leader.jpg";
-import bookCover from "@/assets/book-30-principles.png.asset.json";
+import bookCover from "@/assets/book-30-principles.jpg";
 import { buildMailto } from "@/lib/contact";
 
 const credentials = ["LLB", "BL", "LLM", "ACIS"];
@@ -271,7 +271,7 @@ const FounderPage = () => (
         <div className="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
           <div className="reveal flex justify-center">
             <img
-              src={bookCover.url}
+              src={bookCover}
               alt="30 Vital Principles for Success by Judith Agu"
               className="w-64 md:w-72 h-auto rounded-2xl shadow-elegant rotate-[-3deg] hover:rotate-0 transition-smooth"
               loading="lazy"
