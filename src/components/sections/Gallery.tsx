@@ -26,17 +26,14 @@ import prayer1 from "@/assets/gallery-prayer-1.jpg";
 import prayer2 from "@/assets/gallery-prayer-2.jpg";
 import prayer3 from "@/assets/gallery-prayer-3.jpg";
 import snacks from "@/assets/gallery-snacks.jpg";
-import c1 from "@/assets/gallery-christmas-1.jpg.asset.json";
-import c2 from "@/assets/gallery-christmas-2.jpg.asset.json";
-import c3 from "@/assets/gallery-christmas-3.jpg.asset.json";
-import c4 from "@/assets/gallery-christmas-4.jpg.asset.json";
-import c5 from "@/assets/gallery-christmas-5.jpg.asset.json";
-import c6 from "@/assets/gallery-christmas-6.jpg.asset.json";
-import c7 from "@/assets/gallery-christmas-7.jpg.asset.json";
-import c8 from "@/assets/gallery-christmas-8.jpg.asset.json";
-import c9 from "@/assets/gallery-christmas-9.jpg.asset.json";
-import videoAsset from "@/assets/jic-video-1.mp4.asset.json";
-import juvenileVideoAsset from "@/assets/gallery-juvenile-asero.mp4.asset.json";
+import u1 from "@/assets/images/gallery/first-image.jpg";
+import u2 from "@/assets/images/gallery/second-image.jpg";
+import u3 from "@/assets/images/gallery/third-image.jpg";
+import u4 from "@/assets/images/gallery/fourth-image.jpg";
+import u5 from "@/assets/images/gallery/fifth-image.jpg";
+import u6 from "@/assets/images/gallery/sixth-image.jpg";
+import communityOutreachVideo from "@/assets/videos/community-outreach.mp4";
+import foundationEventVideo from "@/assets/videos/foundation-even.mp4";
 
 const photos = [
   { src: j1, caption: "Make Someone Smile at Christmas Outreach" },
@@ -67,15 +64,12 @@ const photos = [
   { src: prayer2, caption: "Women's Monthly Prayer Meeting" },
   { src: prayer3, caption: "Women's Monthly Prayer Meeting" },
   { src: snacks, caption: "Trying out snacks after a skills acquisition program on baking" },
-  { src: c1.url, caption: "Christmas Outreach — School Visit" },
-  { src: c2.url, caption: "Christmas Outreach — School Visit" },
-  { src: c3.url, caption: "Christmas Outreach — School Visit" },
-  { src: c4.url, caption: "Christmas Outreach — School Visit" },
-  { src: c5.url, caption: "Christmas Outreach — School Visit" },
-  { src: c6.url, caption: "Christmas Outreach — School Visit" },
-  { src: c7.url, caption: "Christmas Outreach — School Visit" },
-  { src: c8.url, caption: "Christmas Outreach — School Visit" },
-  { src: c9.url, caption: "Christmas Outreach — School Visit" },
+  { src: u1, caption: "Skills Acquisition Program — Group Photo" },
+  { src: u2, caption: "Christmas Outreach — Gift Presentation" },
+  { src: u3, caption: "Christmas Outreach — Cake Cutting with Pupils" },
+  { src: u4, caption: "Christmas Celebration — Sweets & Cake for the Children" },
+  { src: u5, caption: "Christmas Outreach — Sharing Gifts in the Classroom" },
+  { src: u6, caption: "School Outreach — Group Photo with Pupils" },
 ];
 
 const Gallery = () => (
@@ -92,26 +86,26 @@ const Gallery = () => (
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [&>*]:mb-5">
         <figure className="group relative overflow-hidden rounded-3xl shadow-card break-inside-avoid">
           <video
-            src={videoAsset.url}
+            src={communityOutreachVideo}
             className="w-full h-auto object-cover"
             controls
             playsInline
             preload="metadata"
           />
           <figcaption className="absolute inset-x-0 top-0 p-4 bg-gradient-to-b from-primary/95 via-primary/60 to-transparent text-primary-foreground text-sm">
-            Highlights from our recent outreach
+            Community Outreach Highlights
           </figcaption>
         </figure>
         <figure className="group relative overflow-hidden rounded-3xl shadow-card break-inside-avoid">
           <video
-            src={juvenileVideoAsset.url}
+            src={foundationEventVideo}
             className="w-full h-auto object-cover"
             controls
             playsInline
             preload="metadata"
           />
           <figcaption className="absolute inset-x-0 top-0 p-4 bg-gradient-to-b from-primary/95 via-primary/60 to-transparent text-primary-foreground text-sm">
-            Visit to Juvenile Correctional Home, Asero, Abeokuta
+            Foundation Event Highlights
           </figcaption>
         </figure>
         {photos.map((p, i) => (
