@@ -1,40 +1,57 @@
 # Project Guidelines
 
-## Asset Rules
+## Coding
 
-- Store images inside `src/assets/images/`
-- Store small videos inside `src/assets/videos/`
-- Store large videos inside `public/videos/`
-- Never create `.asset.json` files.
-- Never use hosted assets.
-- Always use local project assets.
+- Keep components reusable.
+- Never duplicate code.
+- Remove unused imports.
+- Remove duplicate imports.
+- Keep TypeScript strict.
+- Use clean readable code.
 
-## Naming Convention
+## Assets
 
-Use only
+Always use local assets.
+
+Images:
+
+src/assets/images/
+
+Videos:
+
+src/assets/videos/
+
+Large videos:
+
+public/videos/
+
+Never use hosted assets.
+
+Never generate .asset.json files.
+
+Always import local files directly.
+
+## Naming
+
+Use only:
 
 - lowercase
 - hyphens
-- descriptive names
+- descriptive filenames
 
-Example
+Example:
 
-- taiwo-bello.jpg
-- care-for-the-elderly.jpg
-- community-outreach.mp4
+taiwo-bello.jpg
 
-## Coding Rules
+care-for-the-elderly.jpg
 
-- Keep components reusable.
-- Remove duplicate imports.
-- Remove unused imports.
-- Keep TypeScript strict.
-- Never duplicate code.
-- Never introduce breaking changes.
+community-outreach.mp4
+
+Never use spaces or capital letters.
 
 ## Deployment
 
-Publishing should automatically
+Publishing should always follow this flow:
 
 Lovable
 
@@ -50,16 +67,4 @@ GitHub Actions
 
 GiddyHost
 
-Never require manual FTP uploads.
-
-## Build
-
-The project must always build successfully using
-
-bun run build
-
-## Final Rule
-
-Always use local assets.
-
-Never generate `.asset.json` files.
+No manual FTP deployment.
