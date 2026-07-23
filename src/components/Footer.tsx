@@ -32,7 +32,7 @@ const Footer = () => (
             "Service rooted in compassion leaves a legacy that outlives generations."
           </p>
           <p className="mt-4 text-[11px] uppercase tracking-[0.3em] text-accent">
-            Empowering People · Strengthening Families · Transforming Communities
+            Empowering People · Strengthening Families · Transforming Communities.
           </p>
         </div>
 
