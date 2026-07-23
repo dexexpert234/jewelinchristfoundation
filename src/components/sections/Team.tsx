@@ -1,7 +1,6 @@
 import { UserCircle2 } from "lucide-react";
 import nkechi from "@/assets/team-nkechi.jpg";
-import belloAsset from "@/assets/team-bello-v2.jpg.asset.json";
-const bello = belloAsset.url;
+import bello from "@/assets/taiwo-bello.jpg";
 import emmanuella from "@/assets/team-emmanuella.jpg";
 import sawyer from "@/assets/team-sawyer.jpg";
 import nwaolisa from "@/assets/team-nwaolisa.jpg";

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildMailto } from "@/lib/contact";
-import careForElderly from "@/assets/care-for-elderly-2026-v2.jpg.asset.json";
+import careForElderly from "@/assets/care-for-the-elderly.jpg";
 
 type EventItem = {
   title: string;
@@ -20,7 +20,7 @@ const events: EventItem[] = [
     venue: "Peter Olukayode Odetoyinbo Hall, St. Martins Chaplaincy, Eleweran, Abeokuta",
     time: "12 Noon",
     desc: "Honour. Love. Serve. Let's show love in action and make our elders feel valued, respected and cared for.",
-    flyer: careForElderly.url,
+    flyer: careForElderly,
   },
   {
     title: "School Outreach — International Day of the Girl Child",
